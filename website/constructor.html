@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructor</title>
+    <link rel="stylesheet" href="example.css">
+    <link rel="stylesheet" href="constructor.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+    <div class="header">
+        <span class="head">c++</span> programming
+    </div>
+   
+      <nav>
+        <span class="head2">c++</span>
+          <input type="checkbox" id="menu">
+          <label for="menu" class="menu_button">
+            <i class="fas fa-bars"></i> 
+          </label>
+          <ul>
+            <li><a href="index.html"><i class="fad fa-home"></i>home</a></li>
+            <li><a href="contact-as.html"><i class="fad fa-phone"></i>contact as</a></li>
+            <li><a href="about_as.html"><i class="fad fa-user-check"></i>about as</a></li>
+            <li><a href="#"><i class="fad fa-lock"></i>privacy policy</a></li>
+          </ul>
+     </nav>  
+   <div class="side_bar">
+       <ul>
+        <li class="dropdown"><a href="class.html">class</a>
+          <ul>
+            <li>member function/arguments</li>
+            <li>member function/ arguments/ return values</li>
+          </ul>
+          
+          </li>
+          <li class="dropdown"><a href="constructor.html">constructor</a>
+          <ul>
+            <li><a href="parameterized constructor">parameterized constructor</a></li>
+            <li><a href="copy_constructor.html">copy constructor</a></li>
+          </ul>
+          </li>
+          <li class="dropdown"><a href="inheritance.html">inheritance</a>
+            <ul>
+              <li><a href="single_inheritance.html">single_inheritance</a></li>
+              <li><a href="multiple_inheritance.html">multiple_inheritance</a></li>
+              <li><a href="multilevel_inheritance.html">multilevel_inheritance</a></li>
+              <li><a href="hierarchical_inheritance.html">hierarchical_inheritance</a></li>
+              <li><a href="hybrid_inheritance.html">hybrid_inheritance</a></li>
+            </ul></li>
+          <li><a href="friend.html"> friend function</a></li>
+        <li><a href="destructor.html">destructor</a></li>
+        <li><a href="oop_features.html">oop features</a></li>
+        <li><a href="streams.html">streams in c++</a></li>
+        <li><a href="cout_cin.html">cout in c++</a></li>
+        <li><a href="data_types_c++.html">Data types</a></li>
+        <li><a href="derived_datatypes.html">Derived datatypes</a></li>
+        <li><a href="user_defined_datatypes.html">user_defined </a></li>
+        <li><a href="reference_datatype.html">reference datatype </a></li>
+       <li><a href="structure_in_c++.html">sturucture</a></li>
+       <li><a href="polymorphism.html">polymorphism</a></li>
+       <li><a href="generics.html">generics</a></li>
+       <li><a href="operator_overloading.html">operator_overloading</a></li>
+       <li><a href="abstract_class.html"> abstract class</a></li>
+      
+       <li class="dropdown" ><a href="operators_in_c++.html">operators</a>
+       
+       <ul>
+       
+       <li><a href="arithmetic_operators.html">arithmetic operators</a></li>
+       <li><a href="relational_operators.html">relational operators</a></li>
+       <li><a href="logical_operators.html">logical operators</a></li>
+       <li><a href="bitwise_operators.html">bitwise operators</a></li>
+       <li><a href="assignment_operators.html">assignment operators</a></li>
+       </ul>
+       </li>
+    
+       </ul>
+     </div>
+    <div class="content">
+        <h2>constructor</h2>
+        <p>
+            Constructor is a new concept is introduce in c++. What is constructor?<br><br></p>
+            <p>
+            Constructor is a special member function unlike normal function,
+            it as all the featutes of normal function alone with it's own features,
+            except, every normal function hava return data type like(int float void , etc). But the constructor doesn't have the any 
+            return data type includeing void data type also.
+            Normally in c language we can able to assign the value to the data member at the time of declaration.
+            But in c++ we can't assign the value to the data members at the time of declaration. Because the data members are in private mood by default,
+            and moreover see keep our data members in private to achive the data hiding, the main aim of the c++ is data hiding.
+            We use the Constructor to assign  value to data members, c++ allows this property.
+            The constructor is calles by compiler automatically when the object is created to the class.
+            <br>
+            </p>
+            <u><b>Rules for constructor</b></u>
+
+            <ol strat=1>
+                <li>constructor name should be same as the class name.</li>
+               <li>It dosen't return any return value, and it doesn't hava any return prototype like(int, float, void).</li>
+               <li>we have to declare the constructorin public mood only , like normal member function.</li>
+              </ol>
+              <article>
+                <b>
+                  <u>There are three types of constructors:</u>
+                  <li>Default constructor</li>
+                  <li>parameterized constructor</li>
+                  <li>copy constructor</li>
+                </b>
+              </article>
+              <b>Example code for defalut constructor</b>
+              <div class="code">
+              <code>
+          #include < iostream> <br>
+          using namespace std; <br>
+          class emp{ <br>
+            int a,b,c;<br>
+        
+            emp(){ <br>   
+              a=52;<br>
+              b=2; <br>
+              c=a+b; <br> 
+              cout<< " the sum value:" << c << endl; <br>
+            } <br>
+        
+          } <br>
+          int main() <br> 
+          {<br>
+          emp e; <br>}
+        
+              </code>
+            </div>
+          </div>
+          
+        </div>
+        <div class="option">
+          <div class="previous">
+              <a href="logical_operators.html"><button>previous</button></a>
+          </div>
+          <div class="next">
+              <a href="constructor.html"><button>next</button></a>
+          </div>
+        
+        </div><br><br>
+        <footer>
+        
+        @copyright
+        
+        </footer>
+    </div>
+</body>
+</html>

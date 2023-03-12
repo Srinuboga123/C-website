@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>friend_function</title>
+    <link rel="stylesheet" href="example.css">
+    <link rel="stylesheet" href="friend.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+    <div class="header">
+        <span class="head">c++</span> programming
+    </div>
+   
+      <nav>
+        <span class="head2">c++</span>
+          <input type="checkbox" id="menu">
+          <label for="menu" class="menu_button">
+            <i class="fas fa-bars"></i> 
+          </label>
+          <ul>
+            <li><a href="index.html"><i class="fad fa-home"></i>home</a></li>
+            <li><a href="contact-as.html"><i class="fad fa-phone"></i>contact as</a></li>
+            <li><a href="about_as.html"><i class="fad fa-user-check"></i>about as</a></li>
+            <li><a href="#"><i class="fad fa-lock"></i>privacy policy</a></li>
+          </ul>
+     </nav>  
+   <div class="side_bar">
+       <ul>
+        <li class="dropdown"><a href="class.html">class</a>
+        <ul>
+          <li>member function/arguments</li>
+          <li>member function/ arguments/ return values</li>
+        </ul>
+        
+        </li>
+
+        <li><a href="friend.html"> friend function</a></li>
+        <li class="dropdown"><a href="constructor.html">constructor</a>
+        <ul>
+          <li><a href="parameterized_constructor.html">parameterized constructor</a></li>
+          <li><a href="copy_constructor.html">copy constructor</a></li>
+          <li><a href="constructor_overloading.html">constructor_overloading</a></li>
+         <li><a href="constructor_default.html"></a>constructor_default_args</li>
+        </ul>
+        </li>
+        <li class="dropdown"><a href="inheritance.html">inheritance</a>
+          <ul>
+            <li><a href="single_inheritance.html">single_inheritance</a></li>
+            <li><a href="multiple_inheritance.html">multiple_inheritance</a></li>
+            <li><a href="multilevel_inheritance.html">multilevel_inheritance</a></li>
+            <li><a href="hierarchical_inheritance.html">hierarchical_inheritance</a></li>
+            <li><a href="hybrid_inheritance.html">hybrid_inheritance</a></li>
+          </ul></li>
+        <li><a href="destructor.html">destructor</a></li>
+        <li><a href="static_data_members.html">static_data_members</a></li>
+      <li><a href="static_member_function.html">static_member_
+        function</a></li>
+        <li><a href="oop_features.html">oop features</a></li>
+        <li><a href="streams.html">streams in c++</a></li>
+        <li><a href="cout_cin.html">cout in c++</a></li>
+        <li><a href="data_types_c++.html">Data types</a></li>
+        <li><a href="derived_datatypes.html">Derived datatypes</a></li>
+        <li><a href="user_defined_datatypes.html">user_defined </a></li>
+        <li><a href="reference_datatype.html">reference datatype </a></li>
+       <li><a href="structure_in_c++.html">sturucture</a></li>
+       <li><a href="polymorphism.html">polymorphism</a></li>
+       <li><a href="generics.html">generics</a></li>
+       <li><a href="operator_overloading.html">operator_overloading</a></li>
+       <li><a href="abstract_class.html"> abstract class</a></li>
+      
+       <li class="dropdown"><a href="operators_in_c++.html">operators</a>
+       <ul>
+       
+       
+       <li><a href="arithmetic_operators.html">arithmetic operators</a></li>
+       <li><a href="relational_operators.html">relational operators</a></li>
+       <li><a href="logical_operators.html">logical operators</a></li>
+       <li><a href="bitwise_operators.html">bitwise operators</a></li>
+       <li><a href="assignment_operators.html">assignment operators</a></li>
+      </ul>
+    </li>
+    
+       </ul>
+     </div>
+     <div class="content">
+         <h2>friend_function</h2>
+         <p>
+             We know that in c++, the data member are only accessed with the member function of the same class which is called data hiding. <br>
+             But there is a situstion there are two classes and it have different data members. These two classes data member are access through a single function that function is know as the friend function. <br>
+             Friend functionis non member function of any class. These function access private data of those class where it is introduced as a friend function. <br>
+             But there a disadvantage with friend function, c++ main concept is data hiding that outerare not to allowed to access the data. But the friend function accessing the data outside.
+             <br>
+
+         </p>
+
+         <u><b>RULES FOR FRIEND FUNCTION</b></u>
+         <li> friend function name is whatever it may be and it is not relared to class name are function name.</li>
+         <li> we can declare friend function anywhere we want in class like at public, private, protected. Because 
+
+         </li>
+         <li> friend function declaration sholud be inside the class with friend keyword. </li>
+         <li>friend function should define outside the class. And don't use friend keyword, friend function can introduce any no.of classes. </li>
+         <li>it have object as arguments, so we can access the data outside.</li>
+         <li>It is called like a normal function and don't use the object name followed by (.) membership operator. </li>
+         <li>friend function is non-member function. Then we access the private data by using the object name followed by (.) operator in the friend function.</li>
+          <br> <br>
+          <div class="code">
+          <code>
+              #include < iostream > <br>
+              using namespace std;  <br>
+              class sample{ <br>
+                int a, b; <br>
+                friend void print(sample); <br>
+
+              }; <br>
+              void print(sample s){<br>
+            s.a=10; <br>
+            s.b=40; <br>
+            cout<<"a="<< s.a << endl; <br>
+            cout<<"b="<< s.b << endl; <br>
+            } <br>
+            int main() <br>
+        { <br>
+            sample ; <br>
+            print(s); <br>
+            return 0;  <br>
+
+
+        } <br>
+
+        
+        </code>
+        </div>
+           
+<u><b>FRIEND FUNCTION TO TWO CLASSES</b></u> <BR>
+    <div class="code">
+        <code>
+      class emp1{<br>
+     int a; <br>
+     public:<br>
+     void geta(){<br>
+     colut<<" enter the a value " << endl; <br>
+     cin>>a; <br>
+
+    
+    } <br>
+    friend void comp(emp1, emp2); <br>
+
+    };<br>
+   class emp2{ <br>
+    int b; <br>
+    public: <br>
+    void getb(){ <br>
+     cout<<" enter the b value" << endl; <br>
+     cin>>b; <br>
+    }<br>
+    friend void comp(emp1, emp2); <br>
+
+
+
+}; <br>
+void comp(emp e1, emp2 e2){ <br>
+ if(e1.a>e2.b) <br>
+ cout<<"a is big"<< endl; <br>
+ else if(s.a< s.b) <br>
+ cout<<"b is big" << endl; <br>
+ else <br>
+ cout<<" both are equal " << endl; <br>
+}<br>
+
+ int main() <br>
+ { <br>
+ emp e1; <br>
+  emp e2; <br>
+  e1.geta(); <br>
+  e2.getb(); <br>
+  comp(e1,e2); <br>
+  return 0; <br>
+} <br>
+</code>
+</div>
+     </div>
+     <div class="option">
+        <div class="previous">
+            <a href="relational_operators.html"><button>previous</button></a>
+        </div>
+        <div class="next">
+            <a href="bitwise_operators.html"><button>next</button></a>
+        </div>
+    
+    </div><br><br>
+</div>
+<footer>
+
+@copyright
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,142 @@
+@media screen and (min-width:1000px){
+  .head{
+    padding-left: 20px;
+  }
+  .side_bar{
+    width:20%;
+    height: 450vh;
+    float:left;
+    background-color: lightskyblue;
+  }
+  .side_bar ul{
+    padding-top: 20px;
+    text-align: center;
+  }
+  .side_bar ul li{
+    padding:10px;
+    list-style: none;
+    border-bottom: 1px solid red;
+  }
+  .side_bar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  .side_bar ul li a:hover{
+    color:red;
+  }
+  .content{
+    width:65%;
+    float:rigth;
+    margin-left:21%;
+  }
+  .content h2{
+    text-align:center;
+  }
+  
+  
+}
+@media screen and (min-width:1000px) {
+  .side_bar{
+    height: 540vh;
+    display:block;
+  } 
+} 
+@media screen and (min-width:1024px) {
+.side_bar{
+  height: 540vh;
+} 
+}
+@media screen and (min-width:1440px) {
+  .side_bar{
+    height: 455vh;
+  }   
+}
+
+  
+
+.cc{
+  color:white;
+  padding-left:3px;
+  text-transform: uppercase;
+  font-size:25px;
+}
+h2{
+  text-transform: uppercase;
+  
+  font-size:20px;
+  color:rgb(24, 211, 24);
+  text-align:center;
+  padding:10px;
+}
+p{
+  padding:15px;
+}
+b{
+  text-transform: uppercase;
+  color:tomato;
+}
+.syntax{
+  color:black;
+  text-decoration: underline;
+}
+.syntax_struct{
+  width:200px;
+  padding:10px;
+  border:2px solid red;
+  background-color: lightblue;
+  border-radius: 10px;
+  margin:40px;
+}
+.code{
+  padding:10px;
+}
+.syntax_enum{
+  width:280px;
+  padding:10px;
+  background-color: black;
+  color:white;
+  margin-left:10px;
+  border:2px soild black;
+  border-radius:10px;
+}
+.output{
+  width:200px;
+  background-color: lightgoldenrodyellow;
+  padding:15px;
+  border-radius:10px;
+  margin-left:20px;
+}
+.copyrigth{
+  width:100%;
+  text-align:center;
+  padding:10px;
+  background-color:red;
+  color:white;
+  
+}
+.option{
+  width:100%;
+ padding:5%;
+  font-size:30px;
+ 
+
+}
+.previous{
+  float: left;
+  width:50%
+  
+}
+.next{
+  width:50%;
+  float: right;
+  
+}
+
+button{
+  font-size:20px;
+  padding:10px;
+  background-color: lightsteelblue;
+  border-radius: 10px;
+}
+

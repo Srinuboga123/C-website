@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>generics/templates</title>
+    <link rel="stylesheet" href="example.css">
+    <link rel="stylesheet" href="generics.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+    <div class="header">
+        <span class="head">c++</span> programming
+    </div>
+   
+      <nav>
+        <span class="head2">c++</span>
+          <input type="checkbox" id="menu">
+          <label for="menu" class="menu_button">
+            <i class="fas fa-bars"></i> 
+          </label>
+          <ul>
+            <li><a href="index.html"><i class="fad fa-home"></i>home</a></li>
+            <li><a href="contact-as.html"><i class="fad fa-phone"></i>contact as</a></li>
+            <li><a href="about_as.html"><i class="fad fa-user-check"></i>about as</a></li>
+            <li><a href="#"><i class="fad fa-lock"></i>privacy policy</a></li>
+          </ul>
+     </nav>  
+   <div class="side_bar">
+       <ul>
+        <li class="dropdown"><a href="class.html">class</a>
+        <ul>
+          <li>member function/arguments</li>
+          <li>member function/ arguments/ return values</li>
+        </ul>
+        
+        </li>
+
+        <li><a href="friend.html"> friend function</a></li>
+        <li class="dropdown"><a href="constructor.html">constructor</a>
+        <ul>
+          <li><a href="parameterized_constructor.html">parameterized constructor</a></li>
+          <li><a href="copy_constructor.html">copy constructor</a></li>
+          <li><a href="constructor_overloading.html">constructor_overloading</a></li>
+         <li><a href="constructor_default.html"></a>constructor_default_args</li>
+        </ul>
+        </li>
+        <li class="dropdown"><a href="inheritance.html">inheritance</a>
+        <ul>
+          <li><a href="single_inheritance.html">single_inheritance</a></li>
+          <li><a href="multiple_inheritance.html">multiple_inheritance</a></li>
+          <li><a href="multilevel_inheritance.html">multilevel_inheritance</a></li>
+          <li><a href="hierarchical_inheritance.html">hierarchical_inheritance</a></li>
+          <li><a href="hybrid_inheritance.html">hybrid_inheritance</a></li>
+        </ul></li>
+        <li><a href="destructor.html">destructor</a></li>
+        <li><a href="static_data_members.html">static_data_members</a></li>
+      <li><a href="static_member_function.html">static_member_
+        function</a></li>
+        <li><a href="oop_features.html">oop features</a></li>
+        <li><a href="streams.html">streams in c++</a></li>
+        <li><a href="cout_cin.html">cout in c++</a></li>
+        <li><a href="data_types_c++.html">Data types</a></li>
+        <li><a href="derived_datatypes.html">Derived datatypes</a></li>
+        <li><a href="user_defined_datatypes.html">user_defined </a></li>
+        <li><a href="reference_datatype.html">reference datatype </a></li>
+       <li><a href="structure_in_c++.html">sturucture</a></li>
+       <li><a href="polymorphism.html">polymorphism</a></li>
+       <li><a href="generics.html">generics</a></li>
+       <li><a href="operator_overloading.html">operator_overloading</a></li>
+       <li><a href="abstract_class.html"> abstract class</a></li>
+       <li class="dropdown"><a href="operators_in_c++.html">operators</a>
+       <ul>
+       
+       
+       <li><a href="arithmetic_operators.html">arithmetic operators</a></li>
+       <li><a href="relational_operators.html">relational operators</a></li>
+       <li><a href="logical_operators.html">logical operators</a></li>
+       <li><a href="bitwise_operators.html">bitwise operators</a></li>
+       <li><a href="assignment_operators.html">assignment operators</a></li>
+      </ul>
+    </li>
+    
+       </ul>
+     </div>
+     <div class="content">
+         <h2>generics/templets</h2>
+         <p>
+             What is generics? Before knowing about generics, let's hava brife discussion about funtion overloading.
+             We know that by using function overloading we can extended the funcationality of the function by using the same function name passing different parameters.
+             By using function overloading we write code for different task, by doing this the code of the program is increases.<br><br>
+             Based on this to decrease the code of a function without decreasing the performance and activity. Here the <mark>generics</mark> come into 
+             the picture.
+
+             <br>
+             Generics are nothing but templates, generics is concept with is used to performe many operation by using single class or function.
+             To performe operations with generics we use the <mark>templete keyword</mark> here we use one placeholder to performe operation.
+             And in generics function we must have to pass the arguments.
+             Generics are of two types <br>
+             1).  generics function <br>
+             2). generics class<br>
+             <br>
+             You can understand by seeing the Syntax 
+         </p>
+        <div class="syntax">
+
+            templete  &lt;class t &gt; <br>
+            return-type function_name(parameters) <br>
+            {<br>
+
+
+            }<br>
+
+        </div>
+        
+<div class="code">
+
+<code>
+    #include &lt;iostream &gt;<br>
+    using namespace std; <br>
+    template &lt; class tem &gt;<br>
+    tem sum(tem a, tem b){<br>
+    
+return a+b;<br>
+
+
+    }<br>
+    int main()<br>
+    {<br>
+    cout<<"integer sum="<< sum(10,7)<< endl;<br>
+    cout<<"float sum="<< sum(11.0,66.8)<< endl;<br>
+    
+    }<br>
+</code>
+
+</div>
+<div class="output">
+    integer sum=17 <br>
+    float sum=77.8 <br>
+</div>
+
+<p>Perviously we write a program for passing two arguments of same type.
+    <br>
+Now the program is about how to pass different types of arguments to generics functions.
+
+</p>
+<div class="code">
+#include &lt iostream &gt;<br>
+using namespace std; <br>
+template &lt; class t1 , class t2 &gt; <br>
+float mul(t1 x,t2 y)<br>
+{<br>
+    return x*y;<br>
+
+}<br>
+int main()<br>
+{<br>
+cout<<"mul of integers="<< mul(2,3)<< endl;<br>
+cout<<"mul of int and float="<< mul(2, 5.6)<< endl; <br>
+cout<<"mul of float and int="<< mul(5.6, 2)<< endl; <br>
+}<br>
+
+
+</div>
+<div class="output">
+
+    mul of integers=6<br>
+    mul of int and float=11.2<br>
+    mul float and int=11.2<br>
+</div>
+
+<div class="b">
+<b> now the program is about template overloadding</b>
+
+</div>
+
+
+<div class="code">
+
+#include &lt; iostream &gt; <br>
+using namespace std; <br>
+template &lt; class t &gt; <br>
+t mul(t x, t y)<br>
+{<br>
+
+    return x*y; <br>
+
+}<br>
+template &lt; class t &gt;<br>
+t mul(t x, t y, t z){ <br>
+    return x*y*z; <br>
+}<br>
+
+int main()<br>
+{<br>
+
+cout<<"two int mul="<< mul(10,20)<< endl;<br>
+cout<<"three int mul="<< mul(10,20,30)<< endl; <br>
+return 0;<br>
+
+}<br>
+
+</div>
+<div class="output">
+   two int mul=200 <br>
+   three int mul=600 <br> 
+</div>
+
+
+<div class="b">
+    <b>generic class</b>
+</div>
+
+
+<div class="code">
+
+    <code>
+
+  #include &lt; iostream &gt;<br>
+  using namespace std; <br>
+  template &lt; class t &gt; <br>
+  class xyz{<br>
+ t x,y; <br>
+ public:<br>
+ void get()<br>
+ {<br>
+cout<<"enter the values:"<< endl; <br>
+cin>>x>>y; <br>
+
+}<br>
+t sub(); <br>
+
+};<br>
+template &lt;class t &gt;<br>
+t xyz &lt; t &gt :: sub()<br>
+{<br>
+return x-y; <br>
+
+}<br>
+
+int main(){<br>
+test &lt; int &gt; t; <br>
+t.get();
+cout<<"the integer sub="<< t.sub() << endl;
+test &lt; float &gt; t1; <br>
+t1.get()<br>
+cout<<"the float sum="<< t1.sub<< endl;
+return 0; <br>
+
+}<br>
+
+
+    </code>
+</div>
+<div class="output">
+    enter the values<br>
+    5<br>
+    2<br>
+    the integer sub=3<br>
+    enter the values <br>
+    4.00<br>
+    2.00 <br>
+    the float sum= 2.00 <br>
+
+</div>
+
+<div class="option">
+    <div class="previous">
+        <a href="single_inheritance.html"><button>previous</button></a>
+    </div>
+    <div class="next">
+        <a href="multiple_inheritance.html"><button>next</button></a>
+    </div>
+
+</div><br><br>
+</div>
+<footer>
+
+@copyright
+
+</footer>
+     </div>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oop features</title>
+    <link rel="stylesheet" href="oop_features.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+</head>
+<body>
+    <div class="header">
+        <span class="spa1">c++</span> programming
+    </div>
+    <div class="nav">
+        
+            <li><a href="index.html"><i class="fad fa-home"></i>home</a></li>
+            <li><a href="contact-as.html"><i class="fad fa-phone"></i>contact</a></li>
+            <li><a href="about_as.html"><i class="fad fa-user-check"></i>about</a></li>
+            <li><a href="#"><i class="fad fa-lock"></i>privacy policy</a></li>
+
+        
+    </div>
+    <div class="title">
+    <h2>oop features</h2>
+    </div>
+    <div class="border">
+    <div class="paragraph">
+        <p>
+         Every programming language have there own features, that features show the beauty and power of that particular language. Lately we have learn the C programming it has is own features.
+         Like C , C++ also have it's own features <br><br>
+         <span>The main features of C++ programming language are:</span><br><br>
+         1.class<br>
+         2.Object<br>
+         3.Eancapsulation<br>
+         4.Data abstraction<br>
+         5.Inheritance<br>
+         6.Polymorphism<br>
+         <br><br>
+         <span class="spa2">1.class</span> <br><br>
+         <p>Class is the extention of C structure and it is user define data type, This class concept is taken from the 
+         simila 67 language. Class is the combination of data member and member function and it keep data secure. Generally class is the blue print/virtual it as no memory, the memory is allocate to the class by creating an object to it.
+         class provides the access specifiers like public, private, protected, but by default the data memebers are in private mood, when the data members are in private mood they can't be access outside the class. In class we can declare and define the memeber funcation whereas in structure this property is not possible. 
+         The main thing is we must keep the member functionin public mood only,<br>class is the logical copy to creat the object,here the class keyword is used to decalre it</p> 
+         
+         <h1>syntax for class</h1><br>
+            <div class="syntax-class">
+                class <span class="cname">class_Name</span>{<br>
+                Access specifier:<br>
+             Data members; //variables<br>
+            public:<br>
+        member function() // function<br>
+                          };<br>         
+     </div>
+    </p>
+    <h3>Example Code</h3><br>
+    <div class="example-code">
+        Class student{<br>
+            int sid;<br>
+            char sname;<br>
+            public:<br>
+            void getdetails();<br>
+        };<br>
+            
+
+    </div>
+    </div>
+ <BR><BR><BR>
+    <div class="object">
+        <h3>2.OBJECT</h3>
+            <p>We know that object is a physical representation of class .Object is a variable of type class and it is an instance of class.
+                objectis the real world entity, when object is created to the class memory ia allocated in the stack.The size of class is allocated as number of bytes of data variables is declarein class.
+
+            </p>
+            <h2>Syntax of class</h2><br>
+            <div class="object-syntax">
+            
+            class_name object;<br>
+            <b>for example</b><br>
+            student s;
+            </div><br>
+            <div class="example-code-of-object">
+                <code>
+                #include<iostream><br>
+                    using namespace std;<br>
+                    class emp{<br>
+                        int eid;<br>
+                        char ename[20];<br>
+                        public:<br>
+                        void putdetails()<br>
+                        {<br>
+                            cout<<"enter the emp id and ename:"<<
+                                endl;<br>
+                                cin>>eid>>ename; <br>
+                        }<br>
+                        void getdetails()<br>
+                        {<br>
+                            cout<<"eid:"<< eid << endl;
+                                <br>
+                                cout<<"ename:" << ename << endl; <br>
+                        }<br>
+                    };<br>
+                     int main()<br>
+                     {<br>
+                    emp e; <br>
+                    e.putdetails(); <br>
+                    e.getdetails();<br>
+                    return 0; <br>
+                     }<br>
+                     </code>
+                     output:<br>
+                     eid:524<br>
+                     ename:jay<br>
+            </div>
+            <p>
+                From the above program when an object is created <mark>"emp e"</mark>
+                . the memory is allocated for the class in stack area, and 22 bytes of memory is allocated.
+      After object is executed, the member funcations of class are called by dot operated with object name Like <mark>e.getdetails() and e.putdetails()</mark>
+      , and the controller move to the function defination and after its execution controller move to main block and program get terminated. 
+            </p>
+        </div>
+        
+
+        <div class="encapsulation">
+            <h2>3.encapsulation</h2><p>The process of binding the data members and member functions of a class into single unit is called encapsulation
+            .</p>
+            <div class="encapsulation_example">
+                <span class="encap">example for encapsulation</span>
+                <br><code>
+                   <p> class employee<br>
+                    {<br>
+                        int empid;<br>
+                        char empname[20];<br>
+                        public:<br>
+                        void get();<br>
+                        void put();<br>
+                    };</p>
+                </code></div>
+                In the above program int and char are the data members , get() and put() are the member funcation, we bind this two members into single unit by using class
+                    ,so we can encapsulate our data by using class. 
+                     
+            
+        </div>
+        <div class="abstraction">
+            <h2>4.data abstraction</h2>
+            <p>Data abstraction is one of the main features in c++.Abstraction is displaying the important data outside to the world and hiding the background details
+                Data abstraction means providing the important information to the world and hiding the background details. abstaction is done by the class.  </p>
+ <p>
+       Lets take one real world example,By this we can understand what exactly data abstraction, condider lorry as example, mostly the driver known the funcation of acclerator, if he give more accleration speed is increase but he doesn't know how the internal function of acclerator is done.
+       here the important thing is increasing speed of lorry and hiding information is internal work of acclerator.    
+ This what data abstraction.
+    </p>
+
+            </div>
+        <div class="inheritance">
+            <h2>5.inheritance</h2>
+            <p>Inheritance is the key feature of c++, inheritance is the process of deriving a new class from existing classes.<br>
+            lets hava a clear information of inheritance if two classes are there A and B , inheriting the A class property to B class, A class is the parent class and B class is child class, to use parent class property in child class we no need to write entire code of parent class in the child class. By using inheritance we can implement parent class property into child class.
+         </p><br>
+         <div class="inheritance-syntax">
+             <h3>syntax of inheritance</h3>
+             <p>class <span>B</span> : access specifier <span>A</span><br>
+            </p>
+            <span class="spa3">click here to learn more about <a href="#">inheritance</a></span>
+
+         </div>
+        </div>
+        <div class="polymorphims">
+            <h2>6.polymorphims</h2><br>
+            <p>Polymorphims is a key feature of c++ programming language. polymorphims is a mechanisms,that state ability of a message 
+                to be displayed inmore than one form is called <mark>polymorphims.</mark>By name in polymorphims there are two
+                greek words one is <mark>poly</mark> and another one is 
+                <mark>morph</mark>.<br>
+                ->ploy means multiple<br>
+                ->morph means forms<br>
+
+            </p><br>
+        
+                C++ polymorphims is mainly divided into two parts:<br>
+                1).Compile time polymorphims<br>
+                2).Runtime polymorphims<br>
+              
+            
+            <P>
+                <b>1.</b>Compile time polymorphims we can also calles it as static bindind/early binding.
+                compile time polymorphims are of three types <br><br>
+                a). Function overloading<br>
+                b). Operator overloading<br>
+                c).Templets<br>
+                <br>
+              <b>2.</b>Runtime polymorphims we can also called it as dynamic binding.function overriding and virtual function these teo belong to runtime polymorphims.
+            </P>
+            click here to learn more about <a href="#">polymorphims</a>
+        </div>
+        </div>
+        </div>
+     <div class="option"> 
+         <div class="previous">
+         <a href="index.html"><button>previous</button></a>
+         </div>
+         <div class="next">
+             <a href="streams.html"><button>Next</button></a>
+         </div>
+     </div>
+        <br>
+        <div class="copyrigth">
+            @copyright
+        </div>    
+</body>
+</html>

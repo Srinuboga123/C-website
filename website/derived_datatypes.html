@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derived datatypes</title>
+    <link rel="stylesheet" href="derived_datatypes.css">
+    <link rel="stylesheet" href="example.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+    <div class="header">
+        <span class="head">c++</span> programming
+    </div>
+   
+      <nav>
+        <span class="c">c++</span>
+          <input type="checkbox" id="menu">
+          <label for="menu" class="menu_button">
+            <i class="fas fa-bars"></i> 
+          </label>
+          <ul>
+            <li><a href="index.html"><i class="fad fa-home"></i>home</a></li>
+            <li><a href="contact-as.html"><i class="fad fa-phone"></i>contact as</a></li>
+            <li><a href="about_as.html"><i class="fad fa-user-check"></i>about as</a></li>
+            <li><a href="#"><i class="fad fa-lock"></i>privacy policy</a></li>
+          </ul>
+     </nav>  
+     <div class="side_bar">
+       <ul>
+        <li class="dropdown"><a href="class.html">class</a>
+            <ul>
+              <li>member function/arguments</li>
+              <li>member function/ arguments/ return values</li>
+            </ul>
+            
+            </li>
+            <li class="dropdown"><a href="constructor.html">constructor</a>
+            <ul>
+              <li><a href="parameterized constructor">parameterized constructor</a></li>
+              <li><a href="copy_constructor.html">copy constructor</a></li>
+            </ul>
+            </li>
+        <li><a href="oop_features.html">oop features</a></li>
+        <li><a href="streams.html">streams in c++</a></li>
+        <li><a href="cout_cin.html">cout in c++</a></li>
+        <li><a href="data_types_c++.html">Data types</a></li>
+        <li><a href="derived_datatypes.html">Derived datatypes</a></li>
+        <li><a href="user_defined_datatypes.html">user_defined datatypes</a></li>
+        <li><a href="reference_datatype.html">reference datatype </a></li>
+        <li><a href="structure_in_c++.html">sturucture</a></li>
+        <li><a href="operators_in_c++.html">operators</a></li>
+        <li><a href="arithmetic_operators.html">arithmetic operators</a></li>
+        <li><a href="relational_operators.html">relational operators</a></li>
+        <li><a href="logical_operators.html">logical operators</a></li>
+        <li><a href="bitwise_operators.html">bitwise operators</a></li>
+        <li><a href="assignment_operators.html">assignment operators</a></li>
+        <li><a href="polymorphism.html">polymorphism</a></li>
+        <li><a href="operator_overloading.html">operator_overloading</a></li>
+        <li><a href="abstract_class.html"> abstract class</a></li>
+       </ul>
+     </div>
+     <div class="content">
+         <h2>derived datatypes</h2>
+         <br>
+        <p>
+            <b>derived datypes:</b>These datatypes are derived from the primitive datatypes. primitive datatypes are reffered as derived datatypes.<br>
+            The derived datatypes are of 4 types <br>
+            1). Array<br>
+            2).function<br>
+            3).pointers<br>
+            4).reference<br>
+            
+        </p><br>
+
+        <p>
+            <b>1).Array</b>
+            Array is a collection of similar datatypes of data are stored under single variable at contiguous memory location.And index start from 0 to n-1, where n is the number of elements.
+            <br>
+            <br>
+            <b>example program</b><br>
+            <code>
+           #include< iostream> <br>
+           using namespace std; <br>
+           int main() <br>
+           {<br>
+            int a[10]={1,2,3,4,5,6,7,8,9,10}; <br>
+            cout<< "a[1]="<< a[1]<< endl; <br>
+            return 0; <br>
+        }<br>
+            </code>
+           <u> <b>output</b></u> <br>
+           a[1]=1 <br>
+        </p><br><br>
+        <p>
+            <b>2).Function</b><br>
+            Function atr the building blocks of c++. A function is a named unit of a group of program statements. This unit can be involved from other 
+            parts of the program large program are generally avoided because it is difficult to manage a single list
+            of instructions. A large program can be broken down into smaller units knows as functions which make a program to readable and understandable. Besides this 
+            using functions we can reuse the code.<br><br>
+            <u>Every function contain 3 parts </u><br><br>
+            <li>function declaration </li>
+            <li>function calling</li>
+            <li>function definition</li><br><br>
+            <div class="code">
+            <code>
+                #include < iostream><br>
+
+                    using namespace std;<br>
+                    int sum(int , int);<br>
+                    
+                    int main()<br>
+                    
+                    {<br>
+                        int a,b;<br>
+                        
+                        cout<<"enter the a value:"<< endl;<br>
+                        cin>>a;<br>
+                        cout<<"enter b value:"<< endl; <br>
+                        cin>>b;<br>
+                        int s=sum(a,b); <br>
+                        cout<<"The sum:"<< s; <br>
+                        return 0; <br>
+                    }
+                    int sum(int x, int y)<br>
+                    {<br>
+                        int c;<br>
+                        c=x+y; <br>
+                        return c; <br>
+                    } <br>
+            </code>
+        </div>
+       <u> <b>output</b></u> <br>
+       enter the a value:
+       12 <br>
+       enter the b value:12 <br>
+       The sum:25 <br>
+
+
+        </p>
+        <br><br>
+        <p>
+            <b>pointers</b> <br>
+            A pointer is a variable that can hold a address of another variable in with memory can directly accessed and hence can be manipulate in a required way.
+            pointers also support dymanic allocation.<br>
+            pointer variables are declared like normal variables expect for the addition of the unary(*) character. The general form of
+            pointer declaration is as follow<br> for example: <br>
+            int *a;
+            <div class="syntax">
+                Data_type  *variable_Name;
+            </div>
+           
+        </p><br><br>
+        <p>
+        <b>constant</b> <br>
+        The keyword constant can be added to the declaration of an  object to make that object a constant rather than a variable. 
+        Thus the value of the named constant cannot be altered during the program run. A constantmay be initialized at the line of declaration.
+        <div class="syntax">
+            const Data_type const_Name = value; <br>
+        </div>
+        </p>
+        <div class="option"> 
+            <div class="previous">
+            <a href="data_types_c++.html"><button>previous</button></a>
+            </div>
+            <div class="next">
+                <a href="user_defined_datatypes.html"><button>Next</button></a>
+            </div>
+        </div>
+           <br>
+           </div>
+           
+           <div class="copyrigth">
+               @copyright
+           </div>    
+     </div>
+</body>
+</html>

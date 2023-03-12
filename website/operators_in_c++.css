@@ -1,0 +1,109 @@
+@media screen and (min-width:1000px){
+    .side_bar{
+        display:block;
+    }
+    .side_bar{
+        display: block;
+       width:20%;
+        top:15%;
+        height:345vh;
+        background-color: lightblue;
+        float:left;
+    }
+    .side_bar ul {
+        text-align: center;
+        padding-top:20px;
+    
+    }
+    .side_bar ul li{
+        list-style: none;
+        padding:10px;
+        border-bottom: 1px solid red;
+    
+    }
+    .side_bar ul li a{
+        text-decoration: none;
+        text-transform: uppercase;
+        
+        
+    }
+    .content{
+        padding:1rem;
+        width:70%;
+        margin-left:20%;
+    }
+   
+  
+}
+@media screen and (min-width:1440px){
+    .side_bar{
+        height: 271vh;
+    }
+}
+h2{
+    text-align: center;
+    color:rgb(72, 223, 72);
+    text-transform: uppercase;
+    padding-top: 1rem;
+}
+p{
+    padding:1.5rem;
+    text-indent:0.8rem;
+}
+.loperator{
+    color:rgb(28, 137, 209);
+    text-transform: uppercase;
+    padding:1rem;
+
+}
+.start{
+    margin-left:2rem;
+}
+.title{
+text-transform: uppercase;
+text-decoration:underline;
+font-style:oblique ;
+color:rgb(34, 136, 238)
+
+}
+li{
+    margin-left: 1rem;
+    padding-left:1rem;
+}
+.ter{
+    margin-top:20px;
+    border:1px solid red;
+    color:blue;
+    padding:5px;
+}
+.option{
+    width:90%;
+padding:0.5rem;
+}
+.previous{
+    width:45%;
+    float:left;
+}
+.next{
+    width:45%;
+    float:right;
+
+}
+.next button{
+    float: right;
+   
+}
+button{
+    font-size: 1rem;
+    padding:0.2rem;
+    border-radius:5px;
+    background-color: lightblue;
+}
+.copyrigth{
+    width:100%;
+    text-align:center;
+    padding:10px;
+    background-color:red;
+    color:white;
+    
+  }

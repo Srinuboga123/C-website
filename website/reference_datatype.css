@@ -1,0 +1,150 @@
+@media screen and (min-width:1000px) {
+    
+
+
+.side_bar{
+    display:block;
+    width:20%;
+    height: 390vh;
+    background-color: lightblue;
+    float:left;
+    left:0px;
+}
+.side_bar ul {
+    text-align:center;
+    padding-top:20px;
+   
+  
+}
+.side_bar ul li{
+    list-style: none;
+   display:block;
+   padding:10px;
+   border-bottom: 1px solid red;
+ 
+}
+.side_bar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+
+    
+}
+.side_bar ul li a:hover{
+    background-color:  black;
+    color:white;
+    padding:10px;
+}
+.content{
+    margin-left:20%;
+    position:static;
+}
+}
+@media screen and (min-width:1440px) {
+    .side_bar{
+        height: 333vh;
+    }
+      
+  }
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding:15px 0px;
+    color:rgb(64, 233, 64);
+}
+p{
+    padding:10px;
+}
+li{
+    padding:15px;
+}
+h3{
+    margin-left: 20px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color:brown
+}
+.syntax{
+    width:60%;
+    text-align: center;
+    background-color:darkblue;
+    color:white;
+    margin-left: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.imp{
+  
+    margin-left:15px;
+    text-decoration: underline;
+    font-size:25px;
+}
+.example{
+    margin-left:15px;
+    text-transform: uppercase;
+    font-size:25px;
+    font-style: italic;
+    color:darkmagenta;
+    text-decoration: underline;
+
+}
+.code{
+    width:60%;
+    margin:25px;
+    padding:20px;
+    background-color: wheat;
+    border-radius: 15px;
+}
+.output{
+    color:blue;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-left:35px;
+    padding:10px;
+}
+.output2{
+    width:30%;
+    background-color: thistle;
+    margin-left:25px;
+    padding:10px;
+}
+.code2{
+    width:60%;
+    margin:25px;
+    padding:20px;
+    background-color: lightcoral;
+    border-radius: 15px;
+}
+
+  .option{
+    width:100%;
+   padding-left:20px;
+   
+    
+  }
+     .previous{
+    width:35%;
+    float:left;
+    padding:10px;
+  
+  }
+   .next{
+    padding:10px;
+    width:35%;
+    float: right;
+  }
+  button{
+      font-size: 20px;
+      padding:10px;
+      background-color:ligthblue;
+  }
+  .copyrigth{
+      margin-top:100px;
+    width:100%;
+    text-align:center;
+    padding:10px;
+    background-color:red;
+    color:white;
+    
+  }
+ 
+  

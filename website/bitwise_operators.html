@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bitwise operators</title>
+    <link rel="stylesheet" href="example.css">
+    <link rel="stylesheet" href="bitwise_operators.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+    <div class="header">
+        <span class="head">c++</span> programming
+    </div>
+   
+      <nav>
+        <span class="head2">c++</span>
+          <input type="checkbox" id="menu">
+          <label for="menu" class="menu_button">
+            <i class="fas fa-bars"></i> 
+          </label>
+          <ul>
+            <li><a href="index.html"><i class="fad fa-home"></i>home</a></li>
+            <li><a href="contact-as.html"><i class="fad fa-phone"></i>contact as</a></li>
+            <li><a href="about_as.html"><i class="fad fa-user-check"></i>about as</a></li>
+            <li><a href="#"><i class="fad fa-lock"></i>privacy policy</a></li>
+          </ul>
+     </nav>  
+   <div class="side_bar">
+       <ul>
+        <li class="dropdown"><a href="class.html">class</a>
+          <ul>
+            <li>member function/arguments</li>
+            <li>member function/ arguments/ return values</li>
+          </ul>
+          
+          </li>
+          <li class="dropdown"><a href="constructor.html">constructor</a>
+          <ul>
+            <li><a href="parameterized_constructor.html">parameterized constructor</a></li>
+            <li><a href="copy_constructor.html">copy constructor</a></li>
+            <li><a href="constructor_overloading.html">constructor_overloading</a></li>
+            <li><a href="constructor_default.html"></a>constructor_default_args</li>
+           </ul>
+           </li>
+           <li class="dropdown"><a href="inheritance.html">inheritance</a>
+            <ul>
+              <li><a href="single_inheritance.html">single_inheritance</a></li>
+              <li><a href="multiple_inheritance.html">multiple_inheritance</a></li>
+              <li><a href="multilevel_inheritance.html">multilevel_inheritance</a></li>
+              <li><a href="hierarchical_inheritance.html">hierarchical_inheritance</a></li>
+              <li><a href="hybrid_inheritance.html">hybrid_inheritance</a></li>
+            </ul></li>
+           <li><a href="friend.html"> friend function</a></li>
+           <li><a href="destructor.html">destructor</a></li>
+           <li><a href="static_data_members.html">static_data_members</a></li>
+         <li><a href="static_member_function.html">static_member_function</a></li>
+        <li><a href="oop_features.html">oop features</a></li>
+        <li><a href="streams.html">streams in c++</a></li>
+        <li><a href="cout_cin.html">cout in c++</a></li>
+        <li><a href="data_types_c++.html">Data types</a></li>
+        <li><a href="derived_datatypes.html">Derived datatypes</a></li>
+        <li><a href="user_defined_datatypes.html">user_defined </a></li>
+        <li><a href="reference_datatype.html">reference datatype </a></li>
+       <li><a href="structure_in_c++.html">sturucture</a></li>
+       <li><a href="operators_in_c++.html">operators</a></li>
+       <li><a href="arithmetic_operators.html">arithmetic operators</a></li>
+       <li><a href="relational_operators.html">relational operators</a></li>
+       <li><a href="logical_operators.html">logical operators</a></li>
+       <li><a href="bitwise_operators.html">bitwise operators</a></li>
+       <li><a href="assignment_operators.html">assignment operators</a></li>
+       <li><a href="generics.html">generics</a></li>
+       <li><a href="operator_overloading.html">operator_overloading</a></li>
+       <li><a href="abstract_class.html"> abstract class</a></li>
+       <li><a href="polymorphism.html">polymorphism</a></li>
+       </ul>
+     </div>
+     <div class="content">
+         <h2>bitwise operators</h2>
+         <p>
+            The operators which are used to work with bits and perform bit-by-bit operation.
+            These operators are (&,|,^,~,<<,>>)<br>
+           
+      
+           </p><br>
+           <p>
+             First the bitwise operators convert the numericaol value into binary digits/bits and perform the operation on each bit are return the result.<br>
+      If suppose a=10 and b=0, by using bitwise operators(&), first the value is converted into bits 1010 and b value 0 is converted into 0000 bits. Then it perform (a&b) operation and returns the result is 0000.<br>
+      <li>& =binary AND operator</li>
+      <li>| = binary OR operator</li>
+      <li>^ = binary XOR operator</li>
+      <li>~ = binary ones complement operator</li>
+      <li> <<= binary left shift operator </li>
+      <li>>>= binary rigth shift operator</li>
+         </p><br>
+         <span class="exp">example program for bitwise operators</span>
+         <div class="code">
+             <code>
+              #include < <span style="color:blue">iostream</span>> <br>
+              using namespace std; <br>
+              int main() <br>
+              {<br>
+                <span style="color:tomato"> unsigned int p=60;</span> <br>
+                // 60 = 0011 1100 <br>
+                <span style="color:tomato"> unsigned int q=13;</span> <br>
+                //13 = 0000 1101 <br>
+                int z=0; <br>
+                <span style="color:tomato"> z=p&q;</span> <br>
+                cout<<  <span style="color:tomato">"p&q is:" </span> << z<< endl; <br>
+                //12 = 0000 1100 <br>
+                <span style="color:blue">  z=P|q; </span> <br>
+                cout<<  <span style="color:tomato">"p|q is:" </span> << z<< endl; <br>
+               // 61 =0011 1101 <br>
+               <span style="color:blue">  z=P^q; </span> <br>
+               cout<<  <span style="color:tomato">"p^q is:" </span> << z<< endl; <br>
+               //119 = 0011 1101 <br>
+               <span style="color:blue">  z=~p; </span> <br>
+               cout<<  <span style="color:tomato">"~p is:" </span> << z<< endl; <br>
+               // -61 =1100 0011 <br>
+               <span style="color:blue">  z=p<< 2; </span> <br>
+               cout<<  <span style="color:tomato">"p<< 2 is:" </span> << z<< endl; <br>
+               //240 = 1111 0000 <br>
+               <span style="color:blue">  z=p>> 2; </span> <br>
+               cout<<  <span style="color:tomato">"p>> 2 is:" </span> << z<< endl; <br>
+               //15 = 0000 1111 <br>
+               return 0; <br>
+            } 
+             </code>
+            </div>
+            <div class="output">
+                 p&q is: 12 <br>
+                 p|q is : 61 <br>
+                 p^q is =49 <br>
+                 ~p is : -61 <br>
+                 p << 2 is :240 <br>
+                 p>>2 is :15 <br>
+
+            </div>
+            <div class="option">
+                <div class="previous">
+                    <a href="logical_operators.html"><button>previous</button></a>
+                </div>
+                <div class="next">
+                    <a href="assignment_operators.html"><button>next</button></a>
+                </div>
+            
+            </div><br><br>
+     </div>
+     <footer>
+ 
+        @copyright
+    
+    </footer>
+</body>
+</html>

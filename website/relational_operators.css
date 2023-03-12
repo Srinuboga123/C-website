@@ -1,0 +1,117 @@
+@media screen and (min-width:1000px){
+    .side_bar{
+        display:block;
+    }
+    .side_bar{
+        display: block;
+       width:20%;
+        top:15%;
+        height:190vh;
+        background-color: lightblue;
+        float:left;
+    }
+    .side_bar ul {
+        text-align: center;
+        padding-top:20px;
+        margin-right: 1.2rem;
+    
+    }
+    .side_bar ul li{
+        list-style: none;
+        padding:10px;
+        border-bottom: 1px solid red;
+    
+    }
+    .side_bar ul li a{
+        text-decoration: none;
+        text-transform: uppercase;
+        
+        
+    }
+    .content{
+        padding:1rem;
+        width:70%;
+        margin-left:20%;
+        float: rigth;
+    }
+   
+  
+}
+@media  screen and (min-width:1440px){
+    .side_bar{
+        height:165vh;
+    }
+    
+}
+h2{
+    text-align: center;
+    padding:1rem 0rem;
+    text-transform: uppercase;
+    color: rgb(45, 223, 45);
+}
+p{
+    padding:1rem;
+    
+}
+
+.title{
+padding-left:0.5rem;
+text-transform: uppercase;
+text-decoration: underline;
+
+}
+.exp{
+    margin-left:0.8rem;
+    text-transform: uppercase;
+    color:magenta;
+
+}
+.code{
+    width:80%;
+    margin-left:1.5rem;
+    margin-top:1rem;
+    padding:1rem;
+    border:1px solid red;
+    background-color: lightcyan;
+}
+.output{
+    width:50%;
+    margin-top:1rem;
+    margin-left:1.5rem;
+    padding:1.5rem;
+    border:1px solid red;
+    background-color:rgb(245, 185, 107);
+    border-radius:1rem;
+}
+.option{
+    width:90%;
+padding:0.5rem;
+}
+.previous{
+    width:45%;
+    float:left;
+}
+.next{
+    width:45%;
+    float:right;
+
+}
+.next button{
+    float: right;
+   
+}
+button{
+    font-size: 1rem;
+    padding:0.2rem;
+    border-radius:5px;
+    background-color: lightblue;
+}
+footer{
+    margin-top:1rem;
+    width:100%;
+    text-align:center;
+    padding:10px;
+    background-color:red;
+    color:white;
+    
+  }

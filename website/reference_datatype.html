@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reference datatype</title>
+    <link rel="stylesheet" href="example.css">
+    <link rel="stylesheet" href="reference_datatype.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+    <div class="header">
+        <span class="head">c++</span> programming
+    </div>
+   
+      <nav>
+        <span class="head">c++</span>
+          <input type="checkbox" id="menu">
+          <label for="menu" class="menu_button">
+            <i class="fas fa-bars"></i> 
+          </label>
+          <ul>
+            <li><a href="index.html"><i class="fad fa-home"></i>home</a></li>
+            <li><a href="contact-as.html"><i class="fad fa-phone"></i>contact as</a></li>
+            <li><a href="about_as.html"><i class="fad fa-user-check"></i>about as</a></li>
+            <li><a href="#"><i class="fad fa-lock"></i>privacy policy</a></li>
+          </ul>
+     </nav>  
+     <div class="side_bar">
+       <ul>
+        <li class="dropdown"><a href="class.html">class</a>
+          <ul>
+            <li>member function/arguments</li>
+            <li>member function/ arguments/ return values</li>
+          </ul>
+          
+          </li>
+          <li class="dropdown"><a href="constructor.html">constructor</a>
+          <ul>
+            <li><a href="parameterized_constructor.html">parameterized constructor</a></li>
+            <li><a href="copy_constructor.html">copy constructor</a></li>
+            <li><a href="constructor_overloading.html">constructor_overloading</a></li>
+         <li><a href="constructor_default.html"></a>constructor_default_args</li>
+        </ul>
+        </li>
+        <li class="dropdown"><a href="inheritance.html">inheritance</a>
+          <ul>
+            <li><a href="single_inheritance.html">single_inheritance</a></li>
+            <li><a href="multiple_inheritance.html">multiple_inheritance</a></li>
+            <li><a href="multilevel_inheritance.html">multilevel_inheritance</a></li>
+            <li><a href="hierarchical_inheritance.html">hierarchical_inheritance</a></li>
+            <li><a href="hybrid_inheritance.html">hybrid_inheritance</a></li>
+          </ul></li>
+        <li><a href="friend.html"> friend function</a></li>
+        <li><a href="destructor.html">destructor</a></li>
+        <li><a href="static_data_members.html">static_data_members</a></li>
+      <li><a href="static_member_function.html">static_member_function</a></li>
+        <li><a href="oop_features.html">oop features</a></li>
+        <li><a href="streams.html">streams in c++</a></li>
+        <li><a href="cout_cin.html">cout in c++</a></li>
+        <li><a href="data_types_c++.html">Data types</a></li>
+        <li><a href="derived_datatypes.html">Derived datatypes</a></li>
+        <li><a href="user_defined_datatypes.html">user_defined </a></li>
+        <li><a href="reference_datatype.html">reference datatype </a></li>
+        <li><a href="structure_in_c++.html">sturucture</a></li>
+        <li><a href="polymorphism.html">polymorphism</a></li>
+        <li><a href="generics.html">generics</a></li>
+        <li><a href="operator_overloading.html">operator_overloading</a></li>
+        <li><a href="abstract_class.html"> abstract class</a></li>
+        <li class="dropdown"><a href="operators_in_c++.html">operators</a>
+          <ul>
+        <li><a href="arithmetic_operators.html">arithmetic operators</a></li>
+        <li><a href="relational_operators.html">relational operators</a></li>
+        <li><a href="logical_operators.html">logical operators</a></li>
+        <li><a href="bitwise_operators.html">bitwise operators</a></li>
+        <li><a href="assignment_operators.html">assignment operators</a></li>
+          </ul>
+          </li>
+       </ul>
+     </div>
+     <div class="content">
+         <h2>reference datatype</h2> <br>
+         <p>
+             Reference datatype is anew concept in c++.Reference is a new datatype and it is derived datatype.<br>
+             In c we use pointers, array and functions in along with these in c++ we use another new derived dataype called reference dataype/ variable.
+             <br><br>
+             In c function we pass the parameters in two ways call by value and call by address along with thses in c++ we are going to use pass parameters 
+             by call by reference technique.<br><br>
+             In functions we use pointers, pointer store any variable address of same type at anytime in future and we can change the address of 
+             with already stored in it further.Due to these pointer is not secured, To overcome these problem they introduce  the reference variable.
+             Reference variables are also called as link variables.<br><br>
+             Reference variables allows the user to provide alias names for existing variable. Reference 
+             variables are mainly usedful in <mark>copy constructor and operator overloading</mark> 
+            <br>
+            <li>Reference variables are implicit constant vaeriables</li>
+            <li>Till now we know that & is address operator. But in c++ it is used for identify reference variable
+              <br>
+              For example: int &a; <br>
+
+            </li>
+            <h3>syntax for reference variable</h3> <br>
+
+       <div class="syntax">
+            datatype &variable = variable;
+       </div>
+       <br>
+              <span class="imp">Important points about reference</span>
+              <li>Every rederence variable is initialize with another variable.</li>
+              <li>Reference variable should be initialized at the time of declaration only.</li>
+         </p>
+         <p>
+           let's see one example:<br>
+           int a=10, &b=a; <br>
+           Just before we talk reference variables are linked variables. But how let's see <br>
+           Suppose  <mark>int a=10, & b=a;</mark> <br>
+           in above example i take a=10 if i change the value of a to 20 and execute thet line <mark>cout<< a << b;</mark>, we get the 
+           output as 20 and 20, it's means here a=20 and b=20 means if we change anyone variable value then it's change that reference variable also. 
+         </p>
+         <span class="example">example program</span>
+         <div class="code">
+           <code>
+            #include < iostream> <br>
+
+              using namespace std;  <br>
+              
+              int main() <br> 
+              {<br>
+                int a=10; <br> 
+                int &b=a; <br>
+                int &c=b; <br> 
+                cout<< "Before the values change"<< endl; <br> 
+                cout<<"a:"<< a<< endl; <br> 
+                 cout<<"b:"<< b<< endl; <br>
+                  cout<<"c:"<< c<< endl; <br>
+                a=100; <br> 
+                cout<<"After the value change"<< endl;<br> 
+                  cout<<"a:"<< a<< endl; <br> 
+                 cout<<"b:"<< b<< endl; <br> 
+                  cout<<"c:"<< c<< endl; <br>
+              
+                  return 0; <br>
+               } <br>
+           </code>
+          </div>
+           <span class="output">output</span> 
+           <br>
+           <div class="output2">
+             Before the values change<br>
+             a:10 <br>
+             b:10 <br> 
+             c:10 <br>
+             After the value change <br>
+             a:100 <br>
+             b:100 <br>
+             c:100 <br>
+            </div>
+<p>
+ Reference variable allows ti share the data between
+   function. In c to share the data in function we use call by address technique, But in c++ we are using call by reference method.
+
+</p>
+<div class="code2">
+  <code>
+    #include < iostream> <br>
+
+      using namespace std; <br> 
+      
+      int main() <br>
+      { <br> 
+          int y=200, z=400; <br> 
+            cout<<"Before  swapping"<< endl; <br> 
+          cout<<"y="<< y<< endl; <br>
+          cout<<"z="<< z<< endl; <br>
+          swap(y,z); <br>
+            cout<<"After  swapping"<< endl; <br>
+         cout<<"y="<< y<< endl; <br>
+          cout<<"z="<< z<< endl; <br>
+      
+          return 0; <br>
+      } <br>
+      void swap(int &y, int &z) <br>
+      { <br> 
+          int temp=y; <br>
+          y=z; <br> 
+          z=temp; <br>
+          
+      } <br>
+      
+  </code>
+</div>
+<span class="output">output</span> 
+<div class="output2">
+  Before swapping <br>
+  y=200 <br>
+  z=400 <br>
+  After swapping <br>
+  y=400 <br>
+  z= 200 <br>
+</div>
+        <br>
+        <div class="option">
+          <div class="previous">
+            <a href="user_defined_datatypes.html"><button >previous</button></a>
+          </div>
+          <div class="next">
+           <a href="structure_in_c++.html"> <button>next</button></a>
+          </div>
+        </div>
+     <br>
+   
+     <div class="copyrigth">
+       <footer>
+      @copyright
+    </footer>
+  </div>    
+</div>
+</body>
+</html>

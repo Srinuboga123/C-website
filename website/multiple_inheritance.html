@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiple inheritance</title>
+    <link rel="stylesheet" href="example.css">
+    <link rel="stylesheet" href="multiple_inheritance.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+    <div class="header">
+        <span class="head">c++</span> programming
+    </div>
+   
+      <nav>
+        <span class="head2">c++</span>
+          <input type="checkbox" id="menu">
+          <label for="menu" class="menu_button">
+            <i class="fas fa-bars"></i> 
+          </label>
+          <ul>
+            <li><a href="index.html"><i class="fad fa-home"></i>home</a></li>
+            <li><a href="contact-as.html"><i class="fad fa-phone"></i>contact as</a></li>
+            <li><a href="about_as.html"><i class="fad fa-user-check"></i>about as</a></li>
+            <li><a href="#"><i class="fad fa-lock"></i>privacy policy</a></li>
+          </ul>
+     </nav>  
+   <div class="side_bar">
+       <ul>
+        <li class="dropdown"><a href="class.html">class</a>
+        <ul>
+          <li>member function/arguments</li>
+          <li>member function/ arguments/ return values</li>
+        </ul>
+        
+        </li>
+
+        <li><a href="friend.html"> friend function</a></li>
+        <li class="dropdown"><a href="constructor.html">constructor</a>
+        <ul>
+          <li><a href="parameterized_constructor.html">parameterized constructor</a></li>
+          <li><a href="copy_constructor.html">copy constructor</a></li>
+          <li><a href="constructor_overloading.html">constructor_overloading</a></li>
+         <li><a href="constructor_default.html">constructor_default_args</a></li>
+        </ul>
+        </li>
+        <li class="dropdown"><a href="inheritance.html">inheritance</a>
+        <ul>
+          <li><a href="single_inheritance.html">single_inheritance</a></li>
+          <li><a href="multiple_inheritance.html">multiple_inheritance</a></li>
+          <li><a href="multilevel_inheritance.html">multilevel_inheritance</a></li>
+          <li><a href="hierarchical_inheritance.html">hierarchical_inheritance</a></li>
+          <li><a href="hybrid_inheritance.html">hybrid_inheritance</a></li>
+        </ul></li>
+        <li><a href="destructor.html">destructor</a></li>
+        <li><a href="static_data_members.html">static_data_members</a></li>
+      <li><a href="static_member_function.html">static_member_
+        function</a></li>
+        <li><a href="oop_features.html">oop features</a></li>
+        <li><a href="streams.html">streams in c++</a></li>
+        <li><a href="cout_cin.html">cout in c++</a></li>
+        <li><a href="data_types_c++.html">Data types</a></li>
+        <li><a href="derived_datatypes.html">Derived datatypes</a></li>
+        <li><a href="user_defined_datatypes.html">user_defined </a></li>
+        <li><a href="reference_datatype.html">reference datatype </a></li>
+       <li><a href="structure_in_c++.html">sturucture</a></li>
+       <li><a href="polymorphism.html">polymorphism</a></li>
+       <li><a href="generics.html">generics</a></li>
+       <li><a href="operator_overloading.html">operator_overloading</a></li>
+       <li><a href="abstract_class.html"> abstract class</a></li>
+      
+       <li class="dropdown"><a href="operators_in_c++.html">operators</a>
+       <ul>
+       
+       
+       <li><a href="arithmetic_operators.html">arithmetic operators</a></li>
+       <li><a href="relational_operators.html">relational operators</a></li>
+       <li><a href="logical_operators.html">logical operators</a></li>
+       <li><a href="bitwise_operators.html">bitwise operators</a></li>
+       <li><a href="assignment_operators.html">assignment operators</a></li>
+      </ul>
+    </li>
+    
+       </ul>
+     </div>
+     <div class="content">
+<h2>mutilple inheritance</h2> <br>
+<p>
+    multiple inheritance is the deriving a derived class from more than one base class is called multiple inheritance.<br>
+    <br>
+    
+</p>
+   <p>
+ Suppose we have two base classes A and B ane we derived a sub class C from the both super class
+ A and B. Then the sub class C contain the properties of both the super classes.<br>
+ <br><br>
+
+   </p>
+   <li>Let's have a talk about protected members, in multiple inheritance we use the protected access specifier.
+       We know that the data member are private in the class and these members are not allowed to access the outside the class.
+       Suppose if we want to use the data members in both classes(base & derived) then we go for protected.
+   </li>
+   <li>If the data members are in protected mood they can access in that class and immediately next class i.e immediately next derived class. This is the key point we have to consider. And futher visibility is depends on the visibility mood.</li>
+
+   <li>If the derived class is in public mood. Then the super class protected members are once again protected in derived class and further inheritance is allowed.</li>
+   <li>If the derived class is in the private mood, Then the super class protected member are private in the derived class and these are access by the public member function of that derived class abd further inheritance is not allowed.</li>
+ 
+ <div class="code">
+     <code>
+         #include< iostream> <br>
+         using namespace std: <br>
+         class stu {<br>
+             int id;<br>
+             char name[20];<br>
+             public:<br>
+             void get(){<br>
+                 cout<<"enter the id and name" << endl; <br>
+                 cin>>id>>name;<br>
+             }<br>
+             void put(){<br>
+                 cout<<"id="<< id<< endl; <br>
+                 cout<<"name="<< name<< endl; <br>
+             }<br>
+         };<br>
+         class mark{<br>
+             protected:<br>
+             int m,p,c; <br>
+             public:<br>
+             void getm(){<br>
+                 cout<<"enter the m, p, c marks"<< endl; <br>
+
+             }<br>
+             void putm(){<br>
+                 cout<<"m="<< m<< endl; <br>
+                 cout<<"p="<< p<< endl; <br>
+                 cout<<"c="<< c<< endl; <br>
+             }<br>
+         }; <br>
+         class result : public stu, public mark{<br>
+         int total;<br>
+         public:<br><br>
+         void show(){<br>
+             total=m+p+c;<br>
+             cout<<"total="<< total<< endl; <br>
+         }<br>
+
+
+         };<br>
+         int main(){<br>
+             result r;<br>
+             r.get();<br>
+             r.put();<br>
+             r.getm();<br>
+             r.putm();<br>
+            r.show();<br>
+            return 0; <br>
+             
+         } <br>
+     </code>
+ </div>
+ <div class="output">
+     enter the id and name <br>
+     005656 sdf <br>
+     id=005656 <br>
+     name=sdf<br>
+     enter the m,p,c marks <br>
+     45 45 45 <br>
+     m=45 <br>
+     p=45 <br>
+     c=45 <br>
+     total=135 <br>
+ </div>
+</div>
+<div class="option">
+    <div class="previous">
+        <a href="single_inheritance.html"><button>previous</button></a>
+    </div>
+    <div class="next">
+        <a href="multilevel_inheritance.html"><button>next</button></a>
+    </div>
+
+</div><br><br>
+</div>
+<footer>
+
+@copyright
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,500&display=swap');
+
+*{
+    padding:0px;
+margin:0px;
+}
+body{
+    font-family:'Times New Roman', Times, serif;
+}.header{
+    width:100%;
+    background-color: cadetblue;
+    text-align: center;
+    font-size:15px;
+    height:10vh;
+    line-height: 10vh;
+}
+.image{
+    background-color: black;
+}
+
+.navigation{
+    width:100%;
+    background-color:cornflowerblue;
+    height: 8vh;
+    color:white
+}
+.navigation h1{
+    
+    color: white;
+    display: none;
+}
+.navigation ul{
+    float: right;
+    padding: 0px 15px;
+    margin:10px;
+
+}
+.navigation ul li{
+    list-style: none;
+    display:inline-block;
+    
+}
+.navigation ul li a{
+    text-decoration: none;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.navigation ul li a i{
+    color:white;
+    font-size: 12px;
+}
+h1{
+    text-align: center;
+    padding-top:20px;
+    color: yellowgreen;
+}
+p{
+    padding:19px;
+    font-size: 20px;
+    text-indent: 15px;
+    color: white;
+}
+.plist{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing:1px;
+    color:green;
+    
+}
+.concept-list{
+    width:80%;
+    background-color:lightgray;
+    margin:0% 10%;
+    border-radius:20px;
+    opacity: 100%;
+}
+.concept-list ul li{
+    display: block;
+list-style: none;
+padding:20px;
+text-align: center;
+    
+}
+.concept-list ul li a{
+    color:blueviolet;
+    padding:10%;
+font-size: 20px;
+text-decoration: none;
+text-transform: uppercase;
+
+}
+.social-icons{
+    width:100%;
+    font-size: 30px;
+    margin-top:30%;
+    background-color: blanchedalmond;
+    text-align: center;
+}
+.social-icons a{
+    padding: 20px;
+    margin:10px
+    
+    
+}
+.copyrigth{
+    width: 100%;
+ text-align:center;
+    
+    color:white;
+    background-color: red;
+    font-size:25px;
+    padding:10px;
+    margin-top:100px;
+}
+@media screen and (min-width:768px){
+    .navigation{
+        line-height: 20px;
+    }
+    .navigation h1{
+       float:left;
+       display: block; 
+       padding-left:40px
+    }
+    .navigation ul{
+        
+        padding:0px 50px
+    }
+    .navigation ul li {
+        padding:10px 10px;
+    }
+    .navigation a ul li a{
+        font-size: 20px;
+    }
+    .image{
+       background-image: url("home_page_2.jpg"); 
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+    .paragraph{
+        width:60%;
+        margin-left:15%;
+        
+
+    }
+}
+@media screen and (width:1440px){
+    body{
+        font-size:25px;
+    }
+}

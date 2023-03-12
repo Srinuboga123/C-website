@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,500&display=swap');
+
+*{
+    padding:0px;
+    margin:0px;
+}
+
+body{
+    font-size:18px;
+    
+    font-family: arial 'Times New Roman', Times, serif, Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header{
+    width:100%;
+    height: 50px;
+    background-color: cornflowerblue;
+    text-align: center;
+    font-size:30px;
+    padding:2% 0%;
+
+}
+.head{
+    font-size:35px;
+    text-transform: uppercase;
+    color:red
+}
+nav{
+    width:100%;
+   background-color:black;
+  height:50px;
+  line-height:50px;
+
+  
+}
+span{
+    color:white;
+    padding-left:3px;
+    text-transform: uppercase;
+    font-size:25px;
+}
+
+nav ul{
+    float:right;
+  padding-right:10px;
+}
+nav ul li{
+    display: inline-block;
+    padding:5px;
+    list-style: none;
+}
+nav ul li  a{
+  font-size:20px;
+  text-transform: uppercase;
+  text-decoration:none;
+  padding:10px;
+   color:red;
+  
+
+}
+i{
+    color:white;
+    padding:10px;
+}
+#menu{
+    display: none;
+}
+.menu_button{
+    float:right;
+    padding-right: 10px;
+    font-size:25px;
+    display: none;
+}
+#list{
+    display: none;
+}
+.menu_button2{
+    font-size: 23px;
+    padding-left:15px;
+    
+}
+.main{
+    font-size: 20px;
+    color:rgb(13, 187, 13);
+    text-transform: uppercase;
+    padding:20px;
+    text-decoration:underline;
+}
+.variable{
+    font-size:23px;
+    font-style: oblique;
+    text-transform: uppercase;
+    text-decoration:underline;
+    padding-left:15px;
+
+}
+p{
+    text-indent: 10px;
+    padding:18px;
+}
+.data_type{
+    font-size:20px;
+    font-weight:100px;
+    text-decoration: underline;
+    font-family:Georgia, 'Times New Roman', Times, serif
+
+}
+.key{
+    padding:15px;
+    font-size: 18px;
+    text-transform: lowercase;
+    text-indent: 10px;
+}
+ol li{
+    list-style: none;
+    color:blueviolet
+}
+ol{
+    padding-left:15px
+}
+.Primitive{
+    font-size: 20px;
+    padding-left:20px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+code{
+    
+    padding-left:13px;
+}
+.tab{
+    padding:10px;
+    margin-left:10px
+}
+ table   {
+    border:2px solid black;
+    border-collapse: collapse;
+}
+tr th{
+    border:2px solid black;
+    border-collapse: collapse;   
+}
+tr  td{
+    border:2px solid black;
+    border-collapse: collapse;   
+}
+.copyrigth{
+    width:100%;
+    text-align:center;
+    padding:10px;
+    background-color:red;
+    color:white;
+    
+}
+.option{
+    width:100%;
+    padding:10%;
+    font-size:30px
+}
+.previous{
+    float: left;
+    width:50%
+    
+}
+.next{
+    width:50%;
+    float: right;
+}
+@media screen and (max-width:700px){
+    .menu_button{
+        display:block;
+    }
+    nav ul{
+        width:100%;
+        height:100vh;
+        background-color:lightsteelblue;
+        position:fixed;
+        top:110px;
+        left:-120%;
+        
+
+    }
+    nav ul li{
+        display:block;
+        margin:10px 0px;
+        line-height: 50px;
+        text-align: center;
+      
+    }
+    #menu:checked ~ ul{
+        left:0%;
+    }
+    .side_bar{
+        height:500vh;
+    }
+    .side_bar{
+        display: none;
+    }
+    .side_bar ul li{
+        display: none;
+    }
+    button{
+        font-size:20px;
+        padding:10px;
+        background-color: lightsteelblue;
+        border-radius: 10px;
+    }
+    
+}
+@media screen and (min-width:703px) {
+    nav ul{
+        float:right;
+      padding-right:6px;
+    }
+    nav ul li{
+        display: inline-block;
+        padding:3px;
+        list-style: none;
+    }
+    nav ul li  a{
+        font-size:20px;
+        text-transform: uppercase;
+        text-decoration:none;
+        padding:5px;
+         color:red;
+        
+      
+      }
+      i{
+          color:white;
+          padding:5px;
+      }
+     
+      .content{
+          width:70%;
+          float:rigth;
+          margin-left:20%;
+          padding:10px;
+          
+      }
+      .side_bar{
+        width:20%;
+      float:left;
+       height:600vh;
+        background-color: lightsteelblue; 
+        padding:10px;
+        
+       
+     }
+     .side_bar ul{
+       
+         text-align: center;
+         padding-top:15px;
+     }
+     .side_bar ul li{
+         list-style: none;
+         display:block;
+         padding:15px;
+
+     }
+     .side_bar ul li a{
+         text-decoration: none;
+         text-align: center;
+         text-transform: uppercase;
+     }
+     .side_bar ul li a:hover{
+         background-color:tan;
+     }
+     button{
+        font-size:20px;
+        padding:10px;
+        background-color: lightsteelblue;
+        border-radius: 10px;
+    }
+}
+@media screen and (min-width:1000px){
+    .side_bar{
+        height: 450vh;
+    }button{
+        font-size:20px;
+        padding:10px;
+        background-color: lightsteelblue;
+        border-radius: 10px;
+    }
+}

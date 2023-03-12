@@ -1,0 +1,45 @@
+*{
+    padding:0px;
+    margin:0px;
+    
+}
+.header{
+    width:100%;
+    text-align: center;
+    background-color:lightseagreen;
+    font-size: 35px;
+    padding:3%;
+}
+span{
+    color:grey;
+    text-transform: uppercase;
+}
+ 
+.topic_name{
+    width:100%;
+padding:5% 0%
+}
+.topic_name h2{
+    text-align: center;
+    text-transform: uppercase;
+    color:rgb(50, 241, 50);
+}
+.paragraph{
+    padding:5px
+}
+p{
+    padding-left:5px
+}
+h3{
+color:indigo;
+font-size:20px;
+}
+.spa{
+    color:indigo
+}
+.spa2{
+    color:green
+}
+.spa3{
+    color:blueviolet
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operator overloading</title>
+    <link rel="stylesheet" href="example.css">
+    <link rel="stylesheet" href="operator_overloading.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+    <div class="header">
+        <span class="head">c++</span> programming
+    </div>
+   
+      <nav>
+        <span class="head2">c++</span>
+          <input type="checkbox" id="menu">
+          <label for="menu" class="menu_button">
+            <i class="fas fa-bars"></i> 
+          </label>
+          <ul>
+            <li><a href="index.html"><i class="fad fa-home"></i>home</a></li>
+            <li><a href="contact-as.html"><i class="fad fa-phone"></i>contact as</a></li>
+            <li><a href="about_as.html"><i class="fad fa-user-check"></i>about as</a></li>
+            <li><a href="#"><i class="fad fa-lock"></i>privacy policy</a></li>
+          </ul>
+     </nav>  
+   <div class="side_bar">
+       <ul>
+        <li class="dropdown"><a href="class.html">class</a>
+        <ul>
+          <li>member function/arguments</li>
+          <li>member function/ arguments/ return values</li>
+        </ul>
+        
+        </li>
+
+        <li><a href="friend.html"> friend function</a></li>
+        <li class="dropdown"><a href="constructor.html">constructor</a>
+        <ul>
+          <li><a href="parameterized_constructor.html">parameterized constructor</a></li>
+          <li><a href="copy_constructor.html">copy constructor</a></li>
+          <li><a href="constructor_overloading.html">constructor_overloading</a></li>
+         <li><a href="constructor_default.html"></a>constructor_default_args</li>
+        </ul>
+        </li>
+        <li class="dropdown"><a href="inheritance.html">inheritance</a>
+        <ul>
+          <li><a href="single_inheritance.html">single_inheritance</a></li>
+          <li><a href="multiple_inheritance.html">multiple_inheritance</a></li>
+          <li><a href="multilevel_inheritance.html">multilevel_inheritance</a></li>
+          <li><a href="hierarchical_inheritance.html">hierarchical_inheritance</a></li>
+          <li><a href="hybrid_inheritance.html">hybrid_inheritance</a></li>
+        </ul></li>
+        <li><a href="destructor.html">destructor</a></li>
+        <li><a href="static_data_members.html">static_data_members</a></li>
+      <li><a href="static_member_function.html">static_member_
+        function</a></li>
+        <li><a href="oop_features.html">oop features</a></li>
+        <li><a href="streams.html">streams in c++</a></li>
+        <li><a href="cout_cin.html">cout in c++</a></li>
+        <li><a href="data_types_c++.html">Data types</a></li>
+        <li><a href="derived_datatypes.html">Derived datatypes</a></li>
+        <li><a href="user_defined_datatypes.html">user_defined </a></li>
+        <li><a href="reference_datatype.html">reference datatype </a></li>
+       <li><a href="structure_in_c++.html">sturucture</a></li>
+       <li><a href="polymorphism.html">polymorphism</a></li>
+       <li><a href="generics.html">generics</a></li>
+       <li><a href="operator_overloading.html">operator_overloading</a></li>
+       <li><a href="abstract_class.html"> abstract class</a></li>
+       <li><a href="operator_overloading.html">operator_overloading</a></li>
+      
+      
+       <li class="dropdown"><a href="operators_in_c++.html">operators</a>
+       <ul>
+       
+       
+       <li><a href="arithmetic_operators.html">arithmetic operators</a></li>
+       <li><a href="relational_operators.html">relational operators</a></li>
+       <li><a href="logical_operators.html">logical operators</a></li>
+       <li><a href="bitwise_operators.html">bitwise operators</a></li>
+       <li><a href="assignment_operators.html">assignment operators</a></li>
+      </ul>
+    </li>
+    
+       </ul>
+     </div>
+     <div class="content">
+  <h2>operator overloading</h2>
+  <p>
+Operator overloading is a key concept in c++ and it is one of the concept in compile time polymorphism. <br>
+Before we study about operator overloading let's know why this concept is introduce. Usually we use the operators to do the operations
+with operands. For example if we take  '+' operator we use it for adding two numbers. Once observe carfully whatever we add those are predefined abd belongs to predefined datatypes.
+<br>
+So, we do the operation with predefined datatypes. But we cannot perform adding operation with the user defined datatypes. To over come this problem
+C++ introduce operator overloading. Which these concept we add/sub/mul/div and many more operations with user defined datatypes.
+Here we pass the object tyoe parameters.
+
+
+<li>An operator overloading is the process of using an operator instead of function to do particular operation.</li>
+<li>We can overload only the existing operators. we cannot creat new operator but we add addiotion task to it.</li>
+<li>In operator overloading we pass the object as the arguments.</li>
+<li>The left side of a operator should be a userdefined datatype.</li>
+<li>Some of the operator are not overloaded those are ::, .*, sizeof(), *?, </li>
+
+  </p>
+<div class="syntax">
+  
+  return_datatype operator  operator_symbol(list of arguments){<br>
+  
+  
+  
+  return data;<br>
+  }<br>
+  
+</div>
+<br>
+<div class="code">
+  <code>
+    #include &lt; iostream&gt; <br>
+      using namespace std; <br>
+      class xyz{<br>
+        
+        int x; <br>
+        public: <br>
+          void get(){<br>
+            cin>>x;<br>
+          }<br>
+          
+          void operator -(xyz x2){ <br>
+            int rel = x-x2.x; <br>
+            cout<<" The rel="<< rel<< endl; <br>
+          }<br> 
+        }; <br>
+      
+      int main()<br>
+      
+      {<br>
+        xyz x1,x2;<br>
+        cout<<" enter the x1 object x value"<< endl; <br>
+        x1.get();<br>
+        cout<<" enter the x2 object x value"<< endl;<br>
+        x2.get();<br>
+        x1-x2;<br>
+        return 0;<br>
+         
+      }<br>
+  </code>
+</div>
+<div class="output">
+  enter the x1 object x value <br>
+  46 <br>
+  enter the x2 object x value <br>
+  43 <br>
+   the rel= 3 <br>
+</div>
+
+<h3>operator overloading using friend function</h3>
+
+<div class="code">
+  <code>
+    #include &lt;iostream&gt; <br>
+      using namespace std; <br> 
+      
+      //Compiler version g++ 6.3.0
+      #include<iostream>  <br>
+      using namespace std;  <br>
+      class test; <br>
+      class xyz{ <br>
+        int a; <br>
+        public: <br>
+          void get(){ <br>
+            cin>>a; <br>
+          } <br>
+          
+          friend void operator +(xyz,test); <br>
+          
+        }; <br>
+        class test { <br>
+          int b; <br>
+          public: <br>
+            void get(){ <br>
+              cin>>b; <br>
+            } <br>
+          friend  void operator +(xyz, test); <br>
+          }; <br>
+      void operator +(xyz x, test t){ <br>
+        int rel=x.a+t.b; <br>
+        cout<<"rel="<< rel<< endl; <br>
+      } <br>
+      int main() <br>
+      { <br>
+        xyz x; <br>
+         test t; <br>
+        cout<<"enter a value of xyz class"<< endl; <br>
+        x.get(); <br>
+        cout<<"enter b value of test class"<< endl; <br>
+        t.get(); <br>
+        x+t; <br>
+        
+         return 0; <br>
+      } <br>
+  </code>
+</div>
+<div class="output">
+  enter a value of xyz class <br>
+  35  <br>
+  enter b value of test class <br>
+  45 <br>
+  rel= 80 <br>
+</div>
+<div class="option">
+  <div class="previous">
+      <a href="polymorphism.html"><button>previous</button></a>
+  </div>
+  <div class="next">
+      <a href="abstract_class.html"><button>next</button></a>
+  </div>
+
+</div><br><br>
+</div>
+<footer>
+
+@copyright
+
+</footer>
+     </div>
+</body>
+</html>

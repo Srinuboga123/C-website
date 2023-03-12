@@ -1,0 +1,64 @@
+.content{
+    width:100%;
+    padding: 10px;
+}
+h2{
+    text-align:center;
+    text-transform: uppercase;
+    color:rgb(35, 231, 35);
+
+}
+p{
+    padding:10px;
+    text-indent: 15px;
+}
+.code{
+    padding:10px;
+   
+    background-color: bisque;
+    color:cornflowerblue;
+    width:90%;
+    border-radius:20px 0px;
+}
+
+@media screen and (min-width:1000px) {
+    .side_bar{
+        height:130vh;
+    }
+    .code{
+        margin-left:21%;
+    }
+}
+@media screen and (min-width:1440px) {
+    .side_bar{
+        height:110vh;
+    }
+}
+.option{
+    width:90%;
+padding:0.5rem;
+
+}
+.previous{
+    width:45%;
+    float:left;
+}
+.next{
+    width:45%;
+    float:right;
+
+}
+.next button{
+    float: right;
+   
+}
+
+footer{
+margin-top:1rem;
+width:100%;
+text-align:center;
+padding:10px;
+background-color:red;
+color:white;
+
+}

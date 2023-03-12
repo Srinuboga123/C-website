@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hierarchical inheritance</title>
+    <link rel="stylesheet" href="example.css">
+    <link rel="stylesheet" href="hierarchical_inheritance.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+    <div class="header">
+        <span class="head">c++</span> programming
+    </div>
+   
+      <nav>
+        <span class="head2">c++</span>
+          <input type="checkbox" id="menu">
+          <label for="menu" class="menu_button">
+            <i class="fas fa-bars"></i> 
+          </label>
+          <ul>
+            <li><a href="index.html"><i class="fad fa-home"></i>home</a></li>
+            <li><a href="contact-as.html"><i class="fad fa-phone"></i>contact as</a></li>
+            <li><a href="about_as.html"><i class="fad fa-user-check"></i>about as</a></li>
+            <li><a href="#"><i class="fad fa-lock"></i>privacy policy</a></li>
+          </ul>
+     </nav>  
+   <div class="side_bar">
+       <ul>
+        <li class="dropdown"><a href="class.html">class</a>
+        <ul>
+          <li>member function/arguments</li>
+          <li>member function/ arguments/ return values</li>
+        </ul>
+        
+        </li>
+
+        <li><a href="friend.html"> friend function</a></li>
+        <li class="dropdown"><a href="constructor.html">constructor</a>
+        <ul>
+          <li><a href="parameterized_constructor.html">parameterized constructor</a></li>
+          <li><a href="copy_constructor.html">copy constructor</a></li>
+          <li><a href="constructor_overloading.html">constructor_overloading</a></li>
+         <li><a href="constructor_default.html"></a>constructor_default_args</li>
+        </ul>
+        </li>
+        <li class="dropdown"><a href="inheritance.html">inheritance</a>
+        <ul>
+          <li><a href="single_inheritance.html">single_inheritance</a></li>
+          <li><a href="multiple_inheritance.html">multiple_inheritance</a></li>
+          <li><a href="multilevel_inheritance.html">multilevel_inheritance</a></li>
+          <li><a href="hierarchical_inheritance.html">hierarchical_inheritance</a></li>
+          <li><a href="hybrid_inheritance.html">hybrid_inheritance</a></li>
+        </ul></li>
+        <li><a href="destructor.html">destructor</a></li>
+        <li><a href="static_data_members.html">static_data_members</a></li>
+      <li><a href="static_member_function.html">static_member_
+        function</a></li>
+        <li><a href="oop_features.html">oop features</a></li>
+        <li><a href="streams.html">streams in c++</a></li>
+        <li><a href="cout_cin.html">cout in c++</a></li>
+        <li><a href="data_types_c++.html">Data types</a></li>
+        <li><a href="derived_datatypes.html">Derived datatypes</a></li>
+        <li><a href="user_defined_datatypes.html">user_defined </a></li>
+        <li><a href="reference_datatype.html">reference datatype </a></li>
+       <li><a href="structure_in_c++.html">sturucture</a></li>
+       <li><a href="polymorphism.html">polymorphism</a></li>
+       <li><a href="generics.html">generics</a></li>
+       <li><a href="operator_overloading.html">operator_overloading</a></li>
+       <li><a href="abstract_class.html"> abstract class</a></li>
+      
+       <li class="dropdown"><a href="operators_in_c++.html">operators</a>
+       <ul>
+       
+       
+       <li><a href="arithmetic_operators.html">arithmetic operators</a></li>
+       <li><a href="relational_operators.html">relational operators</a></li>
+       <li><a href="logical_operators.html">logical operators</a></li>
+       <li><a href="bitwise_operators.html">bitwise operators</a></li>
+       <li><a href="assignment_operators.html">assignment operators</a></li>
+      </ul>
+    </li>
+    
+       </ul>
+     </div>
+     <div class="content">
+         <h2>hierarchical inheritance</h2><br><br>
+         <p>
+             Hierarchical inheritance is one kind of inheritance in which here we contain one base class and any number of derived class.
+Hierarchical inheritance is quite opposite to <a href="multiple_inheritance.html"> multiple inheritance.</a><br>
+Here by using one base class we can derive any number of derived classes.
+
+         </p>
+
+         <div class="code">
+             <code>
+              #include < iostream><br>
+
+                using namespace std; <br>
+                class student{<br>
+                    protected:<br>
+                    int m, p,c;<br>
+                    char name[10];<br>
+                    char course[10];<br>
+                    public:<br>
+                    void get(){<br>
+                        cout<<"enter the student name"<< endl;<br>
+                        cin>>name;<br>
+                        cout<<"enter the student course"<< endl;<br>
+                        cin>>course;<br>
+                        cout<<"enter the m marks"<< endl;<br>
+                        cin>>m;<br>
+                         cout<<"enter the p marks"<< endl;<br>
+                        cin>>p;<br>
+                         cout<<"enter the c marks"<< endl;<br>
+                        cin>>c;<br>
+                        
+                    }<br>
+                };<br>
+                
+                class total: public student{<br>
+                    int sum;<br>
+                    public:<br>
+                    void total1(){<br>
+                        sum=m+p+c;<br>
+                        cout<<"the total marks of student="<< sum<< endl;<br>
+                    }<br>
+                    
+                };<br>
+                class sports : public student{<br>
+                  int sum;<br>
+                  int sportsmarks;<br>
+                  public:<br>
+                  sports(){<br>
+                      sportsmarks=10;<br>
+                      cout<<"he got 10 grace marks for participate in sports"<< endl;<br>
+                  }<br>
+                  void total(){<br>
+                      sum=m+p+c+sportsmarks;<br>
+                      cout<<"the student total marks="<< sum<< endl;<br>
+                  }<br>
+                    
+                };<br>
+                
+                int main()<br>
+                {<br>
+                 int i;<br>
+                 cout<<"press 1 if student participate in sports"<< endl;<br>
+                 cout<<"press 0 if student not participate in sports"<< endl;<br>
+                 cin>>i;<br>
+                 if(i==1){<br>
+                     sports s;<br>
+                     s.get();<br>
+                     s.total();<br>
+                 }<br>
+                 else if(i==0){<br>
+                     total t;<br>
+                     t.get();<br>
+                     t.total1();<br>
+                 }<br>
+                 else{<br>
+                     cout<<"choose the correct option"<< endl;<br>
+                 }<br>
+                
+                    return 0;<br>
+                }<br>
+                
+             </code>
+         </div>
+         <div class="output">
+          press 1 if student participate in sports<br>
+          press 0 if student not participate in sports<br>
+          1<br>
+          he got 10 grace marks for participate in sports<br>
+          enter the student name <br>
+          mani <br>
+          enter the student course <br>
+          mpc<br>
+          enter the m marks<br>
+          75<br>
+          enter the p marks<br>
+          67<br>
+          enter the c marks<br>
+           54<br>
+           the student total marks= 206<br>
+         </div>
+         <div class="option">
+          <div class="previous">
+              <a href="single_inheritance.html"><button>previous</button></a>
+          </div>
+          <div class="next">
+              <a href="multiple_inheritance.html"><button>next</button></a>
+          </div>
+      
+      </div><br><br>
+      </div>
+      <footer>
+      
+      @copyright
+      
+      </footer>
+
+     </div>
+</body>
+</html>

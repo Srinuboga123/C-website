@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multilevel_inheritance</title>
+    <link rel="stylesheet" href="example.css">
+    <link rel="stylesheet" href="multilevel_inheritance.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+    <div class="header">
+        <span class="head">c++</span> programming
+    </div>
+   
+      <nav>
+        <span class="head2">c++</span>
+          <input type="checkbox" id="menu">
+          <label for="menu" class="menu_button">
+            <i class="fas fa-bars"></i> 
+          </label>
+          <ul>
+            <li><a href="index.html"><i class="fad fa-home"></i>home</a></li>
+            <li><a href="contact-as.html"><i class="fad fa-phone"></i>contact as</a></li>
+            <li><a href="about_as.html"><i class="fad fa-user-check"></i>about as</a></li>
+            <li><a href="#"><i class="fad fa-lock"></i>privacy policy</a></li>
+          </ul>
+     </nav>  
+   <div class="side_bar">
+       <ul>
+        <li class="dropdown"><a href="class.html">class</a>
+        <ul>
+          <li>member function/arguments</li>
+          <li>member function/ arguments/ return values</li>
+        </ul>
+        
+        </li>
+
+        <li><a href="friend.html"> friend function</a></li>
+        <li class="dropdown"><a href="constructor.html">constructor</a>
+        <ul>
+          <li><a href="parameterized_constructor.html">parameterized constructor</a></li>
+          <li><a href="copy_constructor.html">copy constructor</a></li>
+          <li><a href="constructor_overloading.html">constructor_overloading</a></li>
+         <li><a href="constructor_default.html"></a>constructor_default_args</li>
+        </ul>
+        </li>
+        <li class="dropdown"><a href="inheritance.html">inheritance</a>
+        <ul>
+          <li><a href="single_inheritance.html">single_inheritance</a></li>
+          <li><a href="multiple_inheritance.html">multiple_inheritance</a></li>
+          <li><a href="multilevel_inheritance.html">multilevel_inheritance</a></li>
+          <li><a href="hierarchical_inheritance.html">hierarchical_inheritance</a></li>
+          <li><a href="hybrid_inheritance.html">hybrid_inheritance</a></li>
+        </ul></li>
+        <li><a href="destructor.html">destructor</a></li>
+        <li><a href="static_data_members.html">static_data_members</a></li>
+      <li><a href="static_member_function.html">static_member_
+        function</a></li>
+        <li><a href="oop_features.html">oop features</a></li>
+        <li><a href="streams.html">streams in c++</a></li>
+        <li><a href="cout_cin.html">cout in c++</a></li>
+        <li><a href="data_types_c++.html">Data types</a></li>
+        <li><a href="derived_datatypes.html">Derived datatypes</a></li>
+        <li><a href="user_defined_datatypes.html">user_defined </a></li>
+        <li><a href="reference_datatype.html">reference datatype </a></li>
+       <li><a href="structure_in_c++.html">sturucture</a></li>
+       <li><a href="polymorphism.html">polymorphism</a></li>
+       <li><a href="generics.html">generics</a></li>
+       <li><a href="operator_overloading.html">operator_overloading</a></li>
+       <li><a href="abstract_class.html"> abstract class</a></li>
+      
+       <li class="dropdown"><a href="operators_in_c++.html">operators</a>
+       <ul>
+       
+       
+       <li><a href="arithmetic_operators.html">arithmetic operators</a></li>
+       <li><a href="relational_operators.html">relational operators</a></li>
+       <li><a href="logical_operators.html">logical operators</a></li>
+       <li><a href="bitwise_operators.html">bitwise operators</a></li>
+       <li><a href="assignment_operators.html">assignment operators</a></li>
+      </ul>
+    </li>
+    
+       </ul>
+     </div>
+     <div class="content">
+         <h2>multilevel_inheritance</h2>
+         <br>
+         <p>
+             multilevel inheritance, let's take a general example for  better understand suppose
+             we have 4 classes A,B,C,D. if we consider A as base class and then we derived a another class B from the A class, again we derived another class C from the 
+             class B, now the class B becames the parent class to the C class. Here we get all the properties of base class, intermediate base class to the last derived class.
+              <br>
+             Now we say that B class is the intermediate base class. <br>
+             <br>
+              Multiple inheritance contains the one base class and intermediate classes and one derived class. Here we passed all the properties of base class and intermediate
+              classes to the derived class.
+
+
+         </p>
+         <div class="code">
+             <code>
+                 #inclue < iostream> <br>
+                 using namespace std; <br>
+                 class abc{ <br>
+                    int id; <br>
+                    char name[10];<br>
+                    public: <br>
+                    void getd(){<br>
+                        cout<<"enter the id and name" << endl; <br>
+                        cin>>id>>name; <br>
+                    } <br>
+                    void putd(){ <br>
+                      cout<<"id="<< id<< endl; <br>
+                      cout<<"name="<< name<< endl; <br>
+
+
+                    }<br>
+
+                 }; <br>
+                 class xyz : public abc{ <br>
+                  protected : <br>
+                  int m1,m2,m3; <br>
+                  public: <br>
+                  void put(){<br>
+                      cout<<"enter the marks m1, m2, m3" << endl; <br>
+                      cin>>m1>>m2>>m3;
+                  } <br> 
+
+
+                 }; <br>
+                 class average : public xyz{ <br>
+                 int total, avg; <br>
+                 public: <br>
+                 void sum(){ <br>
+                 total=m1+m2+m3;
+                 cout<<"total=" << total<< endl; <br>
+
+                 } <br>
+                 void avg(){ <br>
+
+                    if(total>=40){ <br>
+                        cout<<"you pass:" << endl; <br>
+                    } <br>
+                    else{<br>
+                     cout<<"sorry! you not passed"<< endl; <br>
+                    } <br>
+                    avg=total/3; <br>
+                    cout<<"average=" << avg << endl; <br>
+                
+                 } <br>
+                 }; <br>
+                 int main(){<br>
+                
+                average a;<br>
+
+                a.getd();<br>
+                a.putd(); <br>
+                a.put(); <br>
+                a.sum(); <br>
+                a.avg(); <br>
+                return 0; <br>
+
+            } <br>
+             </code>
+         </div>
+         <div class="option">
+            <div class="previous">
+                <a href="single_inheritance.html"><button>previous</button></a>
+            </div>
+            <div class="next">
+                <a href="multiple_inheritance.html"><button>next</button></a>
+            </div>
+        
+        </div><br><br>
+        </div>
+        <footer>
+        
+        @copyright
+        
+        </footer>
+     </div>
+</body>
+</html>

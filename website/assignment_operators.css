@@ -1,0 +1,154 @@
+@media screen and (min-width:1000px){
+    .side_bar{
+        display:block;
+    }
+    .side_bar{
+        display: block;
+       width:20%;
+        top:15%;
+        height:138vh;
+        background-color: lightblue;
+        float:left;
+    }
+    .side_bar ul {
+        text-align: center;
+        padding-top:20px;
+        margin-right: 1.2rem;
+    
+    }
+    .side_bar ul li{
+        list-style: none;
+        padding:10px;
+        border-bottom: 1px solid red;
+    
+    }
+    .side_bar ul li a{
+        text-decoration: none;
+        text-transform: uppercase;
+        
+        
+    }
+    .content{
+        padding:1rem;
+        width:70%;
+        margin-left:20%;
+        float: rigth;
+    }
+   
+  
+}
+@media screen and (min-width:1440px){
+    .side_bar{
+        height:120vh;
+    }
+}
+h2{
+    text-align: center;
+    padding:1rem 0rem;
+    text-transform: uppercase;
+    color: rgb(45, 223, 45);
+}
+p{
+    padding:1rem;
+    text-indent:0.8rem;
+
+
+    
+}
+.title{
+    font-size:1.6rem;
+    padding:0.5rem;
+    color:rgb(170, 69, 69);
+
+}
+.exp{
+    margin-left:1.5rem;
+    padding:1rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+    text-transform:uppercase;
+}
+.code{
+    width:80%;
+    margin-left:0.5rem;
+    margin-right:0.5rem;
+    margin-top:1rem;
+    padding:1rem;
+    border:1px solid red;
+    background-color: lightcyan;
+}
+.output{
+    width:50%;
+    margin-top:1rem;
+    margin-left:1.5rem;
+    padding:1.5rem;
+    border:1px solid red;
+    background-color:rgb(125, 107, 228);
+    border-radius:1rem;
+}
+.option{
+    width:90%;
+padding:0.5rem;
+}
+.previous{
+    width:45%;
+    float:left;
+}
+.next{
+    width:45%;
+    float:right;
+
+}
+.next button{
+    float: right;
+   
+}
+button{
+    font-size: 1rem;
+    padding:0.2rem;
+    border-radius:5px;
+    background-color: lightblue;
+}
+footer{
+    margin-top:1rem;
+    width:100%;
+    text-align:center;
+    padding:10px;
+    background-color:red;
+    color:white;
+    
+  }
+  @media screen and (min-width:2560px){
+    .side_bar{
+       height: 120vh;
+    }
+    body{
+        font-size:2.5rem;
+    }
+    
+    .header{
+        font-size: 3.5rem;
+    }
+    .head{
+        font-size:4rem
+    }
+    nav ul{
+        margin-right:2.5rem;
+    }
+    nav ul li a{
+        padding:0.5rem;
+        font-size: 2rem;
+        margin-right:1.5rem;
+    }
+    .title{
+     font-size:3rem;
+     padding:2rem
+    }
+    button{
+        font-size:2.5rem;
+        padding:1rem;
+    }
+  .head2{
+      font-size:2rem;
+  }
+} 

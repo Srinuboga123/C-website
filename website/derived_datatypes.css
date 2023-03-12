@@ -1,0 +1,111 @@
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    color:rgb(77, 218, 77);
+}
+.c{
+    color:white;
+    padding-left:3px;
+    text-transform: uppercase;
+    font-size:25px;
+}
+p{
+    padding-left:15px;
+}
+b{
+    text-transform: uppercase;
+    color:blueviolet
+
+}
+.code{
+    padding-left:15px;
+}
+.syntax{
+    width:40%;
+    padding:10px;
+    margin-left:10px;
+    border:1px solid blue;
+    background-color: lightgreen;
+    border-radius:10px;
+}
+.copyrigth{
+    width:100%;
+    text-align:center;
+    padding:10px;
+    background-color:red;
+    color:white;
+    
+}
+.option{
+    width:100%;
+    padding:5%;
+    font-size:30px
+}
+.previous{
+    float: left;
+    width:50%
+    
+}
+.content{
+    display: block;
+}
+.next{
+    width:50%;
+    float: right;
+}
+@media screen and (max-width:990px){
+    .side_bar{
+        display:none;
+    }
+}
+
+@media screen and (min-width:1000px){
+    .content{
+        width:70%;
+        margin-left:20%;
+        float:right;
+        padding:20px;
+        display: block;
+    }
+    .side_bar{
+       width:20%;
+       float:left;
+       height:250vh;
+       background-color: lightskyblue;
+        
+       
+     }
+     .side_bar ul{
+       
+         text-align: center;
+         padding-top:15px;
+     }
+     .side_bar ul li{
+         list-style: none;
+         display:block;
+         padding:15px;
+
+     }
+     .side_bar ul li a{
+         text-decoration: none;
+         text-align: center;
+         text-transform: uppercase;
+     }
+     .side_bar ul li a:hover{
+         background-color:tan;
+     }
+     button{
+        font-size:20px;
+        padding:10px;
+        background-color: lightsteelblue;
+        border-radius: 10px;
+    }
+    
+}
+
+@media screen and (min-width:1440px){
+    .side_bar{
+        height:250vh ;
+    }
+}
+

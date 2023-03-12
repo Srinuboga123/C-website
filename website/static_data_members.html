@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static data members</title>
+    <link rel="stylesheet" href="example.css">
+    <link rel="stylesheet" href="static_data_members.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+    <div class="header">
+        <span class="head">c++</span> programming
+    </div>
+   
+      <nav>
+        <span class="head2">c++</span>
+          <input type="checkbox" id="menu">
+          <label for="menu" class="menu_button">
+            <i class="fas fa-bars"></i> 
+          </label>
+          <ul>
+            <li><a href="index.html"><i class="fad fa-home"></i>home</a></li>
+            <li><a href="contact-as.html"><i class="fad fa-phone"></i>contact as</a></li>
+            <li><a href="about_as.html"><i class="fad fa-user-check"></i>about as</a></li>
+            <li><a href="#"><i class="fad fa-lock"></i>privacy policy</a></li>
+          </ul>
+     </nav>  
+   <div class="side_bar">
+       <ul>
+        <li class="dropdown"><a href="class.html">class</a>
+        <ul>
+          <li>member function/arguments</li>
+          <li>member function/ arguments/ return values</li>
+        </ul>
+        
+        </li>
+        <li class="dropdown"><a href="constructor.html">constructor</a>
+        <ul>
+          <li><a href="parameterized_constructor.html">parameterized constructor</a></li>
+          <li><a href="copy_constructor.html">copy constructor</a></li>
+          <li><a href="constructor_overloading.html">constructor_overloading</a></li>
+         <li><a href="constructor_default.html"></a>constructor_default_args</li>
+        </ul>
+        </li>
+        <li class="dropdown"><a href="inheritance.html">inheritance</a>
+          <ul>
+            <li><a href="single_inheritance.html">single_inheritance</a></li>
+            <li><a href="multiple_inheritance.html">multiple_inheritance</a></li>
+            <li><a href="multilevel_inheritance.html">multilevel_inheritance</a></li>
+            <li><a href="hierarchical_inheritance.html">hierarchical_inheritance</a></li>
+            <li><a href="hybrid_inheritance.html">hybrid_inheritance</a></li>
+          </ul></li>
+        <li><a href="friend.html"> friend function</a></li>
+        <li><a href="destructor.html">destructor</a></li>
+        <li><a href="static_data_members.html">static_data_members</a></li>
+      <li><a href="static_member_function.html">static_member_
+        function</a></li>
+        <li><a href="oop_features.html">oop features</a></li>
+        <li><a href="streams.html">streams in c++</a></li>
+        <li><a href="cout_cin.html">cout in c++</a></li>
+        <li><a href="data_types_c++.html">Data types</a></li>
+        <li><a href="derived_datatypes.html">Derived datatypes</a></li>
+        <li><a href="user_defined_datatypes.html">user_defined </a></li>
+        <li><a href="reference_datatype.html">reference datatype </a></li>
+       <li><a href="structure_in_c++.html">sturucture</a></li>
+       <li><a href="polymorphism.html">polymorphism</a></li>
+       <li><a href="generics.html">generics</a></li>
+       <li><a href="operator_overloading.html">operator_overloading</a></li>
+       <li><a href="abstract_class.html"> abstract class</a></li>
+       <li class="dropdown"><a href="operators_in_c++.html">operators</a>
+       <ul>
+       
+       
+       <li><a href="arithmetic_operators.html">arithmetic operators</a></li>
+       <li><a href="relational_operators.html">relational operators</a></li>
+       <li><a href="logical_operators.html">logical operators</a></li>
+       <li><a href="bitwise_operators.html">bitwise operators</a></li>
+       <li><a href="assignment_operators.html">assignment operators</a></li>
+      </ul>
+    </li>
+       </ul>
+     </div>
+     <div class="content">
+         <h2>static data members</h2>
+         <p>
+             A class data members are declared as static data members inside class by using the <mark>static</mark> keyword. <br>
+             And this datamjembers are initilised with zero automatically.
+             <br> <br>
+             let's have a talk about static data members,  If suppose a class have a data member <mark>int a</mark>
+             . And if we create a multilpe objects to that class then each object have its own local variable int a,
+             if we assign a value to that variable it doesn't effect on another object variable. Because the different object variable have different memory location. <br>
+             <br>
+             But when we declare a variable with static keyword, only one memory location is created and ii is shared to all the objects.
+             If we change the value of that variable in one object then it will reflect 
+             or change the value in other object also. 
+         </p>
+         <p>
+             When we declare a variable static, then it will becomes a class member not a object member and only one copy of that memory is createdand shared to all the objects.
+             Static data members are access by both class and object. 
+             We must declare the static variable in inside the class and we have to define it outside the class.
+         </p> <br> <br>
+         <span> Syntax for defining outside the class</span> <br>
+         <div class="syn">
+             return_type class_name :: variable= value;
+         </div> <br> <br>
+         <div class="code">
+           <code>
+             #include < iostream > <br>
+             #include < conio > <br>
+             using namespace std; <br>
+             class sdata{
+               static int a; <br>
+               public: <br>
+               void get(){<br>
+                cout<< "a=" << a<< endl; <br> 
+              }<br>
+
+             };
+              int sdata::a=20; <br>
+              int main() <br>
+              {<br>
+                sdata s; <br>
+                s.get(); <br>
+              }<br>
+           </code>
+         </div>
+
+         <div class="option">
+          <div class="previous">
+              <a href="detrutor.html"><button>previous</button></a>
+          </div>
+          <div class="next">
+              <a href="static_member_function.html"><button>next</button></a>
+          </div>
+      
+      </div><br><br>
+</div>
+<footer>
+
+  @copyright
+
+</footer>
+     </div>
+</body>
+</html>

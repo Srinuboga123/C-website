@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,500&display=swap');
+
+*{
+    padding: 0px;
+    margin:0px;
+}
+body{
+    font-size:18px;
+    width:100%;
+    font-family: arial 'Times New Roman', Times, serif, Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+}
+.header{
+    text-align: center;
+    font-size: 30px;
+    padding:5% 0%;
+    background-color:rgb(125, 149, 228);
+}
+.nav{
+     width:100%;
+     background-color:black;
+     padding-left:0.5rem
+    }
+    .nav li{
+    display: inline-block;
+    list-style: none;
+    }
+    .nav li a{
+        text-decoration: none;
+        padding:1rem;
+        color:ivory;
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+    .nav il a:hover{
+        background-color:green;
+    }
+.spa1{
+    text-transform: uppercase;
+    color:tomato
+    
+}
+.background-color{
+    margin-left:5%;
+    width:80%;
+    background-color:lightblue
+}
+h1{
+    text-transform: uppercase;
+    font-size:35px;
+    text-align:center;
+    padding:3%;
+    color:fuchsia
+}
+img{
+    width:40vh;
+    text-align: center;
+    height:25rem;
+    margin-left:0rem;
+    
+}
+p{
+  padding:0.5rem;
+  text-indent:1rem;
+   
+    
+}
+.option{
+    width:100%;
+    padding:5% 5%;
+    font-size:35px
+
+}
+.previous{
+    width:50%;
+    font-size:30px;
+    float:left;
+}
+.next{
+    width:50%;
+    font-size:30px;
+    float:left;
+}
+.copyrigth{
+    width:100%;
+    text-align:center;
+    padding:10px;
+    background-color:red;
+    color:white;
+    
+}
+@media screen and (min-width:768px){
+    .background-color{
+        width:80%;
+        margin-left:5%;
+        padding:5%;
+        font-size:25px;
+        border-radius:10px;
+    }
+    body{
+        font-size:25px;
+    }
+    .background-color{
+        margin-top:10%;
+    }
+    .previous button{
+        font-size:20px;
+        border-radius:5px;
+        padding:7px;
+        background-color: lightblue;
+        outline: none;
+    }
+    .next button{
+        font-size:20px;
+        padding:7px;
+        background-color: lightblue;
+        outline: none;
+        border-radius:5px;
+    }
+}
+@media screen and (min-width:1000px){
+    .header{
+        font-size:30px;
+        padding:4% 0%;
+    }
+    .background-color{
+        width:70%;
+        margin-left:6%;
+        font-size:20px;
+        margin-top:3%;
+        border-radius:20px
+    }
+    .nav{
+        padding:1%;
+    }
+    .nav li a{
+        font-size:15px;
+    }
+    .previous button{
+        font-size:20px;
+    }
+    .next button{
+        font-size:20px;
+    }
+}

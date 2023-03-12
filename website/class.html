@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class_in_c++</title>
+    <link rel="stylesheet" href="class.css">
+    <link rel="stylesheet" href="example.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+   <div class="header">
+       <span class="sap1">c++</span>programming
+   </div> 
+   <nav>
+       <span class="logo">c++</span>
+       <input type="checkbox" id="menu">
+          <label for="menu" class="menu_button">
+            <i class="fas fa-bars"></i> 
+          </label>
+    <ul>
+
+        <li><a href="index.html"><i class="fad fa-home"></i>home</a></li>
+        <li><a href="contact-as.html"><i class="fad fa-phone"></i>contact as</a></li>
+        <li><a href="about_as.html"><i class="fad fa-user-check"></i>about as</a></li>
+        <li><a href="#"><i class="fad fa-lock"></i>privacy policy</a></li>
+      </ul>
+   </nav>
+   <div class="side_bar">
+    <ul>
+      <li class="dropdown"><a href="class.html">class</a>
+        <ul>
+          <li>member function/arguments</li>
+          <li>member function/ arguments/ return values</li>
+        </ul>
+        
+        </li>
+        <li class="dropdown"><a href="constructor.html">constructor</a>
+        <ul>
+          <li><a href="parameterized constructor">parameterized constructor</a></li>
+          <li><a href="copy_constructor.html">copy constructor</a></li>
+        </ul>
+        </li>
+        <li><a href="friend.html"> friend function</a></li>
+     <li><a href="oop_features.html">oop features</a></li>
+     <li><a href="streams.html">streams in c++</a></li>
+     <li><a href="cout_cin.html">cout in c++</a></li>
+     <li><a href="data_types_c++.html">Data types</a></li>
+     <li><a href="derived_datatypes.html">Derived datatypes</a></li>
+     <li><a href="user_defined_datatypes.html">user_defined </a></li>
+     <li><a href="reference_datatype.html">reference datatype </a></li>
+    <li><a href="structure_in_c++.html">sturucture</a></li>
+    <li><a href="operators_in_c++.html">operators</a></li>
+    <li><a href="arithmetic_operators.html">arithmetic operators</a></li>
+    <li><a href="relational_operators.html">relational operators</a></li>
+    <li><a href="logical_operators.html">logical operators</a></li>
+    <li><a href="bitwise_operators.html">bitwise operators</a></li>
+    <li><a href="assignment_operators.html">assignment operators</a></li>
+    <li><a href="generics.html">generics</a></li>
+    <li><a href="polymorphism.html">polymorphism</a></li>
+    
+    <li><a href="class.html">Class_in_c++</a></li>
+    </ul>
+  </div><br>
+   <div class="content">
+
+    <h2>class in c++</h2><br>
+
+ <p>
+   Class is a user defined datatype. Class  is extention of c structure, it as all features of c structure and along with that it as there own features.
+  In class we decalre data members and member function and if we need we can define the function i the class only. claas is a virtual thing. memory is allocated to the Class
+  when we create an object to it.
+  We know that c++ is for data hiding and security to achive that we use three access specifiers those are <mark>public, private, protected</mark> 
+  lets see the syntax of class<br><br> </p>
+  <div class="syntax">
+    class < class_name> { <br>
+    public/private/protected: <br>
+    Data members; <br>
+    public:<br>
+    memeber function; <br>
+   };
+
+  </div><br>
+  <p>
+  From above syntax we come to know that we have use the access specifiers to data memebers and member functions.
+  If we don't mention the access specifier to the data members by default compiler will define the deata members private.
+  And one more important point is we most keep the memeber functions in public mood only , otherwise we can't access the data outside class.
+</p>
+<div class="exam">
+  <span style="color:cornflowerblue">class</span> example <br>
+  {<br>
+  int a;<br>
+  int b; <br>
+  <span style="color:red"> public</span>:<br>
+  <span style="color:yellow">void</span> get(){<br>
+  cout<< "enter the values" << endl;<br>
+  <span style="color:violet">cin>>a>>b;</span> <br>
+
+  cout<< " the a value is :" << a<< endl;<br>
+  cout<< " the b value is :" << b<< endl;<br>
+ }<br>
+
+  
+  
+  }; <br>
+  int main() <br>
+  {<br>
+  example e;<br>
+  e.get(); <br>
+  
+  }<br>
+</div>
+
+  </div>
+  <div class="option">
+    <div class="previous">
+        <a href="logical_operators.html"><button>previous</button></a>
+    </div>
+    <div class="next">
+        <a href="constructor.html"><button>next</button></a>
+    </div>
+
+</div><br><br>
+<footer>
+ 
+  @copyright
+
+</footer>
+</body>
+</html>

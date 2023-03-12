@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manipulators_c++</title>
+    <link rel="stylesheet" href="manipulators_in_c++.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+    <div class="header">
+        <span class="spa1">c++</span> programming
+    </div>
+    <div class="nav">
+        
+            <li><a href="index.html"><i class="fad fa-home"></i>home</a></li>
+            <li><a href="contact-as.html"><i class="fad fa-phone"></i>contact</a></li>
+            <li><a href="about_as.html"><i class="fad fa-user-check"></i>about</a></li>
+            <li><a href="#"><i class="fad fa-lock"></i>privacy policy</a></li>
+
+        
+    </div>  
+    <div class="image">
+    <h2>manipulators</h2><br>
+    <p>
+        Another main concept in c++ is manipulators, manipulators are used for the formatted output purpose.
+        To perform the operations with manipulators we need to use the <mark>< iomanip.h ></mark> header file.<br>
+        Here we have two types of manipulators:<br>
+        1). manipulator operators<br>
+        2).manipulator functions<br><br>
+        <ul>
+            <li>1).Here we have to discuss some more points, while we performming operations with manipulator operators we need to use < iomanip.h > header file, but it is optional. </li>
+            <li>2). But while we performming operations with manipulators functions we have to implement the iomanip.h header file.</li>
+            <li>3).All the manipulators works on the cout object. we know that cout is available in iostream.h header file.But if we implement iomanip.h header file in our program there is not need to use iostream.h header file. Because already the iomanip.h have the inner function of cout.</li>
+            <li>4).This is only for cout, for cin object we have to use the iostream.h header file </li>
+        </ul><br>
+    
+<div class="mani">
+        <span>1).manipulator operators:</span> The operators which are used to get the formatted result on display is called manipulator operators.<br>
+     <br>
+     This operators are of two types:<br>
+     A). endl<br>
+     B).ends<br>
+</div>
+    </p>
+    <p>
+        <u><b>A) endl:</b></u>The endl operator is use to print the output in different new lines.In general we use "\n" to print the output in different new line. Then why we need to use use endl opeartor insteade of "\n", Here the point we know that "\n" is a backslash character
+        and for every backslash i.e \n it takes one byte of memeory.But the endl operator is a manipulator and it doesn't required any memory.
+        <br>
+    </p>
+        <U><h3>program 1</h3></U>
+        <div class="exam1">
+            <code>
+                #include< iostream > <br>
+                using namespace std; <br>
+                int main() <br>
+                {<br>
+                    cout<<"srinu CSE\n"; <br>
+                    cout<< "GNIT"; <br>
+                    return 0; <br>
+
+                }<br>
+                
+            </code><br>
+            <span class="sap2">output</span><br>
+            srinu CSE <br>
+            GNIT <br>
+        </div>
+        <U><h3>program 1</h3></U>
+<div class="exam1">
+    <code>
+        #include< iostream > <br>
+        using namespace std; <br>
+        int main() <br>
+        {<br>
+            cout<<"srinu CSE"<< <mark> endl;</mark> <br>
+            cout<< "GNIT"; <br>
+            return 0; <br>
+
+        }<br>
+        
+    </code><br>
+    <span class="sap2">output</span><br>
+    srinu CSE <br>
+    GNIT <br>
+</div>
+<p>
+    <u><b>B) ends:</b></u> This operator is used for end space. lets have a clear idea about ends.<br>
+    Take one example <mark>cout<<"ab"<<"bc";</mark>, if we execute line we get the output <mark>abcd</mark>.But we want the space between ab and cd
+Like "ab cd", to get our desire output we need to use ends operator <mark>cout<<"ab"<< ends<<"cd"; </mark>
+.And one more thing ends give only one space. In c we use tab space "\t" to get two or more space.
+</p><br>
+<br>
+<span>1).manipulator functions:</span>
+<p>The functions which are used to get formatted output   are called manipulator functions. let's have a look on over it .</p><br>
+<p><span class="setw">A).setw():</span>
+   setw() is a manipulator function, by name we can understand  that setw means set width, setw() function going to allocate specified number of spaces on the 
+   screen and it print the text from right to left.
+    Generally, the printf() and cout print the text from left to right.<br><br>
+   let's have a general example, Generally when we go to shopping after the payment we get the bill, on the bill  content is in formatted  it's means, the bill contain proper 
+   number of rows and coloum. Usually the item name is on left side and amount is on right side, once observe 
+   amount format is from right to left then only it's possible to calculate the amount.</p><br><br>
+<u><h3> Example program by using \n</h3></u><br>
+<div class="exam1">
+    <code>
+      #include< iostream> <br>
+      #include< iomanip><br>
+      int main()<br>
+      {<br>
+        cout<<"2\n 22\n 222\n";<br>
+        return 0;<br>
+
+      }
+    </code><br>
+      <span class="spa2">output</span><br>
+    2<br>
+    22<br>
+    222<br>
+</div>
+<u><h3> Example program by using setw()</h3></u><br>
+<div class="exam1">
+    <code>
+      #include< iostream> <br>
+      #include< iomanip><br>
+      int main()<br>
+      {<br>
+       cout<< setw(5)<< 2<< endl;<br>
+        cout<< setw(5)<< 2<< endl;<br>
+            cout<< setw(5) << 2<< endl;<br>
+        return 0;<br>
+
+      }
+    </code><br>
+      <span class="spa2">output</span><br>
+    _ _ _ _2<br>
+    _ _ _ 22<br>
+     _ _ 222<br>
+    Here we give 5 as a parameter to get 5 spaces
+</div>
+<p><span class="setf">B). setfill(): </span>
+    setfill() is one of the function in manipulator functions. There is nothing much to discuss
+    about setfill() function. The function of setfill is to fill empty spaces with are left by setw() function. 
+    Suppose if we use only 2 spaces of setw() out of 5 spaces then the remaining spaces will be filled by any symbol.<br><br>
+    And one more important point is setfill() and setw() are interrelaled without setw() setfill() function does not perform it's own operation.</p><br>
+    <div class="exam1">
+        <code>
+          #include< iostream> <br>
+          #include< iomanip><br>
+          int main()<br>
+          {<br>
+            cout<< setfill('*');<br>
+           cout<< setw(5)<< 2<< endl;<br>
+           cout<< setfill('*');<br>
+            cout<< setw(5)<< 2<< endl;<br>
+            cout<< setfill('*');<br>
+                cout<< setw(5) << 2<< endl;<br>
+            return 0;<br>
+    
+          }
+        </code><br>
+          <span class="spa2">output</span><br>
+        ****2<br>
+        ***22<br>
+         **222<br>
+        
+    </div>
+<p><span class="setf">C). setprecision(): </span>
+    setprecision() is a manipulator function, the function of setprecision() is to specific number of decimal value after the decimail point
+    in floating data and it doesn't works on integer data. </p>
+<div class="exam1">
+    <code>
+        #include< iostream><br>
+        #include< iomanip><br>
+        int main()<br>
+        {<br>
+            cout<< setprecision(2)<< 22/7.0;
+
+        }
+        
+
+    </code><br>
+    <span class="spa2">output</span><br>
+    3.14
+</div>
+<div class="option"> 
+    <div class="previous">
+    <a href="cout_cin.html"><button>previous</button></a>
+    </div>
+    <div class="next">
+        <a href="operators_in_c++.html"><button>Next</button></a>
+    </div>
+</div>
+   <br>
+   </div>
+   <div class="copyrigth">
+       @copyright
+   </div>    
+</body>
+</html>

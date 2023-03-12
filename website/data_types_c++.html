@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data types</title>
+    <link rel="stylesheet" href="data_types_c++.css">
+    <link rel="stylesheet" href="example.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+    <div class="header">
+        <span class="head">c++</span> programming
+    </div>
+   <nav>
+      <span>c++</span>
+        
+          <input type="checkbox" id="menu">
+          <label for="menu" class="menu_button">
+            <i class="fas fa-bars"></i> 
+          </label>
+          <ul>
+            <li><a href="index.html"><i class="fad fa-home"></i>home</a></li>
+            <li><a href="contact-as.html"><i class="fad fa-phone"></i>contact as</a></li>
+            <li><a href="about_as.html"><i class="fad fa-user-check"></i>about as</a></li>
+            <li><a href="#"><i class="fad fa-lock"></i>privacy policy</a></li>
+          </ul>
+     </nav>  
+     <div class="side_bar">
+      <ul>
+        <li class="dropdown"><a href="class.html">class</a>
+          <ul>
+            <li>member function/arguments</li>
+            <li>member function/ arguments/ return values</li>
+          </ul>
+          
+          </li>
+          <li class="dropdown"><a href="constructor.html">constructor</a>
+          <ul>
+            <li><a href="parameterized_constructor.html">parameterized constructor</a></li>
+            <li><a href="copy_constructor.html">copy constructor</a></li>
+            <li><a href="constructor_overloading.html">constructor_overloading</a></li>
+            <li><a href="constructor_default.html"></a>constructor_default_args</li>
+           </ul>
+           </li>
+           <li class="dropdown"><a href="inheritance.html">inheritance</a>
+            <ul>
+              <li><a href="single_inheritance.html">single_inheritance</a></li>
+              <li><a href="multiple_inheritance.html">multiple_inheritance</a></li>
+              <li><a href="multilevel_inheritance.html">multilevel_inheritance</a></li>
+              <li><a href="hierarchical_inheritance.html">hierarchical_inheritance</a></li>
+              <li><a href="hybrid_inheritance.html">hybrid_inheritance</a></li>
+            </ul></li>
+           <li><a href="friend.html"> friend function</a></li>
+           <li><a href="destructor.html">destructor</a></li>
+           <li><a href="static_data_members.html">static_data_members</a></li>
+         <li><a href="static_member_function.html">static_member_function</a></li>
+       <li><a href="oop_features.html">oop features</a></li>
+       <li><a href="streams.html">streams in c++</a></li>
+       <li><a href="manipulators_in_c++.html">manipulators</a></li>
+       <li><a href="cout_cin.html">cout in c++</a></li>
+       <li><a href="data_types_c++.html">Data types</a></li>
+       <li><a href="derived_datatypes.html">Derived datatypes</a></li>
+       <li><a href="user_defined_datatypes.html">user_defined </a></li>
+       <li><a href="reference_datatype.html">reference datatype </a></li>
+       <li><a href="structure_in_c++.html">sturucture</a></li>
+       <li><a href="generics.html">generics</a></li>
+       <li><a href="polymorphism.html">polymorphism</a></li>
+       <li><a href="operator_overloading.html">operator_overloading</a></li>
+       <li><a href="abstract_class.html"> abstract class</a></li>
+       <li class="dropdown"><a href="operators_in_c++.html">operators</a>
+        <ul>
+       <li><a href="arithmetic_operators.html">arithmetic operators</a></li>
+       <li><a href="relational_operators.html">relational operators</a></li>
+       <li><a href="logical_operators.html">logical operators</a></li>
+       <li><a href="bitwise_operators.html">bitwise operators</a></li>
+       <li><a href="assignment_operators.html">assignment operators</a></li>
+</ul>
+</li>
+      </ul>
+    </div>
+<div class="content">
+     <span class="main">data types in c++ :-</span><br><br>
+  
+       <span class="variable">variable:-</span>
+       <p>
+        A variable is used for storing either a character or value.Each variable in c++ have 
+        specific type which can be determine the size of the variable in memory.And each variable need identifier to distinguish it from other variable. Variable names in c++ can be write upto from 1 to 225 character. All variables names must begin with a letter of alphabet or an underscore. While we writing variables no spaces or special characters are allowed 
+        and the important thimg is c++ is a case-sensitive uppercase or lowercase letters are distinguish.   
+     </p>
+    <span class="variable">identifiers:-</span><br><p>
+    An identifier is a sequence of muitiple lettes digits or underscore character(_). Neither spaces nor punctuation marks or symbols can be part of an identifier. We have to use only letters,digits and single underscore character then only it can vaild.<br>
+<br>
+Another important point is while we inventing our own identifier it does not match eith any keywords of c++ language, if not the complier specifics
+one which are reserved keywords.
+</p><br>
+<p>
+The c++ standard reserved ketwords are, <br><br>
+<div class="key">
+ auto,break,case,catch,try,do,while,class, default,int,char,float,double,if,else,switch, new,throw,
+   typedef, union, unsigned, singed, virtual, friend, public, privite, short, return, oparator, templete, typename,
+   inline, long, const,using, protected,for,namespace, nested if, register, extern, sizeof, false, this, static,cast,
+  etc.. 
+
+</div>
+</p>
+<p class="data_type">In c++ there 3 types of data types
+  <br>
+  <ol>
+   <li>1).Primitive data type</li>
+   <li>2).Derived data types</li>
+   <li>3).User-defined data types</li>
+
+  </ol>
+</p>
+  <span class="Primitive">1.Primitive data types:-</span><br><p>
+  we can also called it as built-in data types. These datya types are predefined and user can be use directly by declaring.<br>
+  There are some primitive data types available in C++<br><br>
+  <b>a).Integer<br>
+  b).Character<br>
+  c).Floating point<br>
+  d).Double<br>
+  e).Boolean<br>
+  f).void<br>
+  g).wide character<br></b><br>
+   <br>
+   <span class="Primitive">2. Derived data types:-</span><br>
+   <p>These data types are derived from the primitive data types.Primitive datatypes are reffered to as derived datatypes.
+     <br>The derived datatypes are<br><br>
+     a).Function<br>
+     b).Array<br>
+     c).pointer<br>
+     d).reference<br>
+   </p>
+   <span class="Primitive">3. User defined data types:-</span><br><p>
+<br>User defined datatypes are basically derived from the built-in datatypes and these are customized as user defined datatypes.<br>
+<br>
+There user defined datatypes are<br>
+<br>
+a).Structure<br>
+b).Union<br>
+c).Enumaration<br>
+d).Class<br>
+</p>
+<p>In this page we discuss about primitive data types<br>
+<b>a).character:-</b></br>
+Character is a primitive datatype. These datatype is used for storing characters. we use <b>char</b>
+keyword to declare character datatype. The size of memeory required for char is 1 byte.
+<br>
+For example:- char a;<br><br>
+<b>b). Integer:-</b><br>
+It ia a primitive datatype it is used for storing the integer number. We use <b>int</b>
+keyword for declaring the integer datatype.It required 4 bytes of memory<br>
+<br>For Example:-int a;
+<br><br>
+<B>C).Boolean:-</B><br>
+It is a primitive datatype used for storing logical values(T OR F).
+We use <b>bool</b> keyword for declaring boolean datatype.The size of memory required for boolean is 1 byte.Range is 0 to 1.<br>
+we can not have use modifiers for this datatype.
+<br><br>
+<b>d).Floating point:-</b><br>
+Floating point is a primitive datatype and it is used for storing single precision value.
+We use <b>float</b> keyword for declaring float datatype. It required 8 bytes if memory. <br>
+for example:-float a;<br><br>
+<b>e). double floating point:-</b><br>
+This datatype is a primitive datatype. it is used for storing double precision values.
+We use <b>double</b> keyword to declare it.It required 8 bytes of memeory<br>
+for example:- double as;<br><br>
+<b>f).void:-</b><br>
+Void means without any value. void datatypes represents a valueless entity. Void datatype is uses in function which does not return a value. it doesn't required memory.<br>
+<br>
+for example:- void v;<br>
+</p>
+<br>
+<p><b>sizeof()</b> is a built-in function used for finding the sizeof datatype.
+</p>
+<p>
+<code>
+  #include< iostream><br>
+  using namespace std;<br>
+  int main()<br>
+  {<br>
+    int a;<br>
+    cout<<"size of integer(int):"<< sizeof(a)<< endl;<br>
+char c;<br>
+cout<<"size of character(char):"<< sizeof(c)<< endl;<br>
+float f;<br>
+cout<<"size of float(float):"<< sizeof(f)<< endl;<br>
+double d;<br>
+cout<<"size of double(double):"<< sizeof(d)<< endl;<br>
+return 0<br>
+  }
+</code><br>
+<b>output;-</b><br>
+size of integer(int):-4<br>
+size of character(char):-1<br>
+size of float(float):-4<br>
+size of double(double):-8<br>
+
+</p>
+<div class="tab">
+  <B>DATATYPE MODIFIERS</B><br>
+  Datatype modifires are used with built-in datatypes to modify length of data.
+<br>
+Data type modifires in c++ is <br>
+<li>1).signed</li>
+<li>2).unsigned</li>
+<li>3).short</li>
+<li>4).long</li> 
+
+  <table>
+    <tr><th>data type</th>
+    <th>size of data(bytes)</th>
+  <th>Range</th></tr>
+
+  <tr>
+    <td>int</td>
+    <td>4</td>
+    <td>-214783648 to 214783647 </td>
+  </tr>
+  <tr>
+    <td>signed short int</td>
+    <td>2</td>
+    <td>-32768 to 32767</td>
+    </tr>
+    <tr>
+      <td>unsigned short int</td>
+      <td>2 </td>
+      <td>0 to 65535</td>
+      </tr>
+      <tr>
+        <td>signed long int</td>
+        <td>4</td>
+        <td>-214783648 to 214783647 </td>
+    </tr>
+    <tr>
+      <td>unsigned long int</td>
+      <td>4</td>
+      <td>0 to 4294967295</td>
+    </tr>
+    <tr>
+      <td>signed long long int</td>
+    <td>8</td>
+  <td>-922337203685477580 to 922337203685477579</td></tr>
+  <td>unsigned long long int</td>
+  <td>8</td>
+  <td>0 to 18446744073209551615</td>
+    
+  <tr>
+    <td>unsigned char </td>
+    <td>2</td>
+    <td> 0 to 225</td>
+
+  </tr>
+
+  </table>
+</div>
+
+</div>
+</div>
+<div class="option"> 
+    <div class="previous">
+    <a href="cout_cin.html"><button>previous</button></a>
+    </div>
+    <div class="next">
+        <a href="user_defined_datatypes.html"><button>Next</button></a>
+    </div>
+</div>
+   <br>
+   </div>
+   <div class="copyrigth">
+       @copyright
+   </div>    
+  </body>
+</html>

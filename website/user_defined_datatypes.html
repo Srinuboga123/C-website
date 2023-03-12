@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User defined datatype</title>
+    <link rel="stylesheet" href="example.css">
+    <link rel="stylesheet" href="user_defined_datatypes.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+    <div class="header">
+        <span class="head">c++</span> programming
+    </div>
+   
+      <nav>
+        <span class="cc">c++</span>
+          <input type="checkbox" id="menu">
+          <label for="menu" class="menu_button">
+            <i class="fas fa-bars"></i> 
+          </label>
+          <ul>
+            <li><a href="index.html"><i class="fad fa-home"></i>home</a></li>
+            <li><a href="contact-as.html"><i class="fad fa-phone"></i>contact as</a></li>
+            <li><a href="about_as.html"><i class="fad fa-user-check"></i>about as</a></li>
+            <li><a href="#"><i class="fad fa-lock"></i>privacy policy</a></li>
+          </ul>
+     </nav>  
+     <div class="side_bar">
+       <ul>
+        <li class="dropdown"><a href="class.html">class</a>
+          <ul>
+            <li>member function/arguments</li>
+            <li>member function/ arguments/ return values</li>
+          </ul>
+          
+          </li>
+          <li class="dropdown"><a href="constructor.html">constructor</a>
+          <ul>
+            <li><a href="parameterized_constructor.html">parameterized constructor</a></li>
+            <li><a href="copy_constructor.html">copy constructor</a></li>
+            <li><a href="constructor_overloading.html">constructor_overloading</a></li>
+            <li><a href="constructor_default.html"></a>constructor_default_args</li>
+           </ul>
+           </li>
+           <li class="dropdown"><a href="inheritance.html">inheritance</a>
+            <ul>
+              <li><a href="single_inheritance.html">single_inheritance</a></li>
+              <li><a href="multiple_inheritance.html">multiple_inheritance</a></li>
+              <li><a href="multilevel_inheritance.html">multilevel_inheritance</a></li>
+              <li><a href="hierarchical_inheritance.html">hierarchical_inheritance</a></li>
+              <li><a href="hybrid_inheritance.html">hybrid_inheritance</a></li>
+            </ul></li>
+           <li><a href="friend.html"> friend function</a></li>
+           <li><a href="destructor.html">destructor</a></li>
+           <li><a href="static_data_members.html">static_data_members</a></li>
+         <li><a href="static_member_function.html">static_member_function</a></li>
+        <li><a href="oop_features.html">oop features</a></li>
+        <li><a href="streams.html">streams in c++</a></li>
+        <li><a href="cout_cin.html">cout in c++</a></li>
+        <li><a href="data_types_c++.html">Data types</a></li>
+        <li><a href="derived_datatypes.html">Derived datatypes</a></li>
+        <li><a href="user_defined_datatypes.html">user_defined datatypes </a></li>
+        <li><a href="reference_datatype.html">reference datatype </a></li>
+        <li><a href="structure_in_c++.html">sturucture</a></li>
+        <li><a href="polymorphism.html">polymorphism</a></li>
+        <li><a href="generics.html">generics</a></li>
+        <li><a href="operators_in_c++.html">operators</a></li>
+        <li><a href="arithmetic_operators.html">arithmetic operators</a></li>
+        <li><a href="relational_operators.html">relational operators</a></li>
+        <li><a href="logical_operators.html">logical operators</a></li>
+        <li><a href="bitwise_operators.html">bitwise operators</a></li>
+        <li><a href="assignment_operators.html">assignment operators</a></li>
+        <li><a href="operator_overloading.html">operator_overloading</a></li>
+        <li><a href="abstract_class.html"> abstract class</a></li>
+       </ul>
+     </div>
+     <div class="content">
+       <h2>user defined datatypes</h2><br>
+       <p>
+        
+        <b>User defined datatypes</b> is a datatype in c++, in which the data is defined by user.
+        <br>
+        User defined datatypes are of 4 types<br>
+        1).Structure<br>
+        2).Union<br>
+        3).enumaration<br>
+        4).Class <br>
+
+       </p>
+       <p>
+         <b>1).Structure</b><br>
+         Structure is a user defined datatype in c++ and also in c.
+         Structure is collection of different datatypes at one place under single name.
+          And we use <mark>struct</mark> keyword for declaration of structure.we can access the structure data memebers  by using
+          structure variable followed by Dot(.) operator. We will learn more about structure in further artical.Click here to learn about 
+          <a href="structure_in_c++.html">structure</a> <br><br>
+         <br>
+         <b class="syntax">syntax for structure</b><br>
+         <div class="syntax_struct">
+           struct structure_Name{ <br>
+            data member;<br>
+            data member;<br>
+
+           } structure_variable;<br>
+         </div>
+       </p><br>
+       <P>
+       <b>2).Union</b> <br>
+       The declaration and usage of union is same as structure. But the functionality of union is different.
+       Here we use <mark>union</mark> keyword to declare it.
+       Union members share same memory location and the size of union is equal to the size of the larger datatype.
+      Addresses of the data members are same because of sharing same memory. we can access the union data memebers in by using
+      union variable followed by Dot(.) operator. <br>
+      <br>
+      <b class="syntax">syntax for union</b><br>
+      <div class="syntax_struct">
+        union union_Name{ <br>
+         data member;<br>
+         data member;<br>
+
+        } union_variable;<br>
+      </div>
+      <div class="code">
+       <code>
+        #include < iostream> <br>
+
+          using namespace std; <br>
+          union a{ <br>
+              int a; <br>
+           float b; <br>
+          }u1; <br>
+          
+          int main() <br>
+          { <br>
+             cout<<"enter a value:"<< endl; <br>
+             cin>>u1.a; <br>
+             cout<<"address of a:"<<&u1.a<< endl; <br>
+             cout<<"enter b value:"<< endl; <br>
+             cin>>u1.b;<br>
+             cout<<"address of b:"<<&u1.b<< endl; <br>
+             cout<<"size of a :"<< sizeof(u1.a)<< endl; <br>
+          cout<<"size of b:"<< sizeof(u1.b)<< endl; <br>
+              return 0; <br>
+          } <br>
+       </code>
+       <b>output:</b><br>
+       enter a value: <br>
+       23<br>
+       address of a: 06012d4 <br>
+       enter b value: <br>
+       34 <br>
+       address of b:06012d4 <br>
+       size of a: 4 <br>
+       size of b: 4 <br> 
+
+       This output is get when i used the 16 bit compiler
+      </div>
+       </P>
+    <p>
+      <b>3).Enumaration</b> <br>
+      Enumaration is a user defined datatype in c/c++. In enumaration we assign the intergral constant value to a name.
+      Here we use <mark >enum</mark> keyword for declaration.<br><br>
+      <b class="syntax">syntax for structure</b><br><br>
+      <div class="syntax_enum">
+        enum enum_name{ List_of_names};<br>
+        
+      </div>
+      <div class="code">
+        <code>
+          #include < iostream> <br>
+
+            using namespace std;  <br>  <br> 
+            enum numbers_alphabat{ zero, one ,two ,three,four, five,six,seven,eigth,  <br>
+            nine, ten};  <br>  <br>
+            
+            int main()  <br>
+            {  <br> numbers_alphabat n;  <br>
+               int i;  <br> 
+               for(i=0; i<=ten; i++)  <br>{  <br> 
+                   printf("%d\n", i);  <br> 
+               } <br>
+            
+                return 0;  <br> 
+            }  <br>
+        </code>
+        </div>
+        <div class="output">
+        <b>output</b>  <br>
+        0<br>
+        1 <br>
+        2 <br>
+        3 <br>
+        4 <br>
+        5 <br>
+        6 <br>
+        7  <br>
+        8 <br>
+        9 <br>
+        
+        </div>
+       <p> In the above program we didn't initilized any value to the names in the enum list.
+        But when we excute the program we get some values, like zero = 0 and ten 
+        =9 by default.
+        
+        It means when we not initialized the value to the names, then the compiler will initialize some default
+        values with start from 0 to n-1; where n is the number of elements in the list.
+        <br><br>
+        Suppose if we initialize some values to the names like  zero=2 or one=3, if we run the program now get the zero=2 and one=3 and by continous we get two=4 and soon,
+        it means if we give any value to a name in the list the compiler will give next value of the initialized value to the next name, like two=4 we given and for four the compiler 
+        initialize 5 . Let's see one example program for more understand <br><br></p>
+        <div class="code">
+          <code>
+            #include < iostream> <br>
+
+              using namespace std; <br> 
+              enum numbers_alphabat{ zero=2, one=3 ,two ,three,four, five,six,seven,eigth,
+              nine, ten};<br> <br>
+              
+              int main() <br>
+              {  <br> 
+                printf("%d %d %d %d %d", zero ,one, two,three,four); <br>
+                 return 0;<br>
+              } <br>
+          </code>
+          <div class="output">
+            2 3 4 5 6
+          </div>
+        </div>
+       <p>And one more important point is enum can allows to give same values to the two different names.</p><br>
+   <div class="code">
+     <code>
+      #include < iostream> <br>
+
+        using namespace std; <br>
+        enum numbers_alphabat{ zero=2, one=2 ,two ,three,four, five,six,seven,eigth,
+        nine, ten}; <br>
+        
+        int main() <br>
+        { <br> 
+          printf("%d %d %d ", zero ,one, two); <br>
+          return 0; <br>
+        } <br>
+     </code>
+     </div>
+     <div class="output">
+       2 2 3
+     </div>
+   
+   
+   
+      
+      
+    </p>
+    <div class="option"> 
+      <div class="previous">
+      <a href="derived_datatypes.html"><button>previous</button></a>
+      </div>
+      <div class="next">
+          <a href="reference_datatype.html"><button>Next</button></a>
+      </div>
+  </div>
+     <br>
+     </div>
+     <div class="copyrigth">
+         @copyright
+     </div>    
+     </div>
+</body>
+</html>

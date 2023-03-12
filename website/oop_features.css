@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,500&display=swap');
+
+*{
+    padding: 0px;
+    margin:0px;
+}
+body{
+    font-size:18px;
+    font-family: arial 'Times New Roman', Times, serif, Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+}
+.header{
+    text-align: center;
+    font-size: 30px;
+    padding:5% 0%;
+    background-color:rgb(125, 149, 228);
+}
+.nav{
+     width:100%;
+     background-color:black;
+     padding:3%
+    }
+    .nav li{
+    display: inline-block;
+    list-style: none;
+    }
+    .nav li a{
+        text-decoration: none;
+        padding:10px;
+        color:ivory;
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+    .nav il a:hover{
+        background-color:green;
+    }
+.spa1{
+    text-transform: uppercase;
+    color:tomato
+    
+}
+.title{
+    text-transform: uppercase;
+    text-align: center;
+    padding:4% 0%;
+    color:dodgerblue;
+
+}
+.paragraph p{
+ padding:12px;
+ text-indent: 15px;
+}
+span{
+    font-size: 20px;
+    color:yellowgreen;
+}
+.spa2{
+    text-transform: uppercase;
+    color:blueviolet;
+    
+}
+h1{
+    padding-left:5%;
+    text-decoration:underline;
+}
+.cname{
+    color:blue;
+}
+.syntax-class{
+    background-color: cornflowerblue;
+    padding:5%;
+    margin-left: 5%;
+    font-size:20px;
+    border:2px solid red;
+    border-radius: 10px;
+    width:60%
+    
+    
+
+}
+h3{
+    padding-left: 5%;
+    font-size: 20px;
+    color:rgb(51, 206, 51);
+}
+.example-code{
+    width:60%;
+    font-size:20px;
+    border:2px dotted green;
+    padding:5%;
+margin-left:20px;
+color:purple;
+}
+.object h3{
+    color:blue
+}
+.object p{
+    padding:5%;
+    text-indent:10px;
+}
+.object h2{
+    padding-left: 5%;
+}
+.object-syntax{
+    width:30%;
+    padding:2%;
+    margin-left: 5%;
+    
+    background-color: coral;
+}
+.example-code-of-object{
+    margin:10px;
+    padding:5%;
+    background-color:lightsteelblue;
+    width:60%
+}
+.encapsulation{
+    width:80%;
+    text-indent: 10px;
+    padding:5%;
+}
+.encapsulation h2{
+    padding-left: 5%;
+    text-transform: uppercase;
+    
+}
+.encapsulation p{
+    text-indent: 10px;
+    padding: 5%;
+}
+.encapsulation_example .encap{
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-left: 5%;
+    color:violet;
+    
+}
+.encapsulation code p{
+    padding-left: 5%;
+    font-size: 15px;
+}
+
+.abstraction h2{
+    text-transform: uppercase;
+    padding-left:5%;
+}
+.abstraction p{
+    padding:5%;
+    text-indent: 10px;
+}
+
+.inheritance h2{
+    text-transform: uppercase;
+    padding-left:5%
+}
+.inheritance p{
+    text-indent: 10px;
+    padding:5%
+}
+.inheritance-syntax{
+    
+    text-transform: uppercase;
+    font-size:25px;
+}
+.inheritance-syntax P{
+    font-size: 18PX;
+    border:2px solid red;
+    width:280px;
+    margin-left:4%;
+    padding:5px;
+    border-radius: 10px;
+}
+.inheritance-syntax P span{
+    color:red
+}
+.spa3{
+    font-size: 20px;
+    color:black;
+    text-transform: lowercase;
+    padding-left: 5%;
+    padding-top:10px;
+}
+.polymorphims{
+    padding-left:5%
+}
+.polymorphims h2{
+    text-transform:uppercase;
+    padding-left:5%;
+    padding-top:3%;
+
+}
+.polymorphims p{
+    padding-left: 5%;
+    text-indent: 10px;
+    
+    padding:5%;
+}
+.next_previous{
+    width:100%;
+    margin-top: 4%;
+    padding:10px;
+    font-size: 20px;
+    background-color: blueviolet;
+}
+
+.copyrigth{
+    width:100%;
+    text-align:center;
+    padding:10px;
+    background-color:red;
+    color:white;
+    
+}
+.option{
+    width:100%;
+    padding:10%;
+    font-size:30px
+}
+.previous{
+    width:50%
+    
+}
+.next{
+    width:50%;
+    float: left;
+}
+@media screen and (min-width:1000px){
+    body{
+    
+        padding-left:5%;
+        
+    }
+    .header{
+        font-size: 30px;
+    }
+    .spa1{
+        color:indigo;
+        font-size: 30px;
+    }
+    .border{
+        width:80%;
+        border: 2px solid rgb(109, 35, 35);
+        padding:4%;
+        font-size:20px;
+    }
+    .nav li a{
+        font-size: 20px;
+        padding:12px;
+    }
+    .copyrigth{
+        font-size:25px
+    }
+}

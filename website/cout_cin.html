@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cout_cin in c++</title>
+    <link rel="stylesheet" href="cout_cin.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+    <div class="header">
+        <span class="spa1">c++</span> programming
+    </div>
+    <div class="nav">
+        
+            <li><a href="index.html"><i class="fad fa-home"></i>home</a></li>
+            <li><a href="contact-as.html"><i class="fad fa-phone"></i>contact</a></li>
+            <li><a href="about_as.html"><i class="fad fa-user-check"></i>about</a></li>
+            <li><a href="#"><i class="fad fa-lock"></i>privacy policy</a></li>
+
+        
+    </div>
+    <h2>cout</h2>
+    <p>Cout is a predefine object with is available in ostream class. To 
+        perform operations with cout first we need to use the iostream.h header file in our program.
+    <br><br>
+   let's see some features of cout,<br>
+   <div class="features">
+   <ul>
+       <li>1) cout always refers to the console output device i.e monitor.In simple words we use cout to display the content on the screen.<br></li>
+       <br>
+       <li>2). We can perform the formatted and unformatted output operations with cout object.</li><br>
+       <li>3). Another advantage feature in c++ is cout doesn't required any conversion character like %d,%s,%f with we have us in c language. Because implicit conversion is done in cout object, that's why we don't use conversion character in c++ programming. <br> </li>
+    
+       
+   </ul>
+   </div>
+
+
+</p>
+ <u><h3>Syntax for cout object</h3></u><br><br>
+ <span class="syntax">
+     cout<<"text/variable";
+ </span><br><br>
+  <span class="p"> <p>Above syntax we use the "<<"  operator, we called it as a insertion operator/put to operator and we called it as  over loaded left shift opeartor.
+   <br>
+   cout<<"welcome to c++ world";
+   <br>
+   int a=3;<br>
+   int b=34;<br>
+   cout<< a;<br>
+   cout<< b ; <br>
+
+</p></span><br><br>
+<h3>program 1</h3>
+<code>
+    <div class="exam">
+    #include< iostream><br>
+    using namespace std;<br>
+    int main()<br>
+    {<br>
+        int a=20;<br>
+        int b=34;<br>
+        cout<<"a="<< a<< endl;<br>
+            cout<<"b="<< b; <br>
+            return 0;<br>
+    }
+    <br>
+    <u><h3>output</h3></u>
+    a=20<br>
+    b=34
+</div>
+</code>
+<br>
+<h3>program 2</h3><br>
+<code>
+    <div class="exam2">
+    #include< iostream><br>
+    #include< string.h ><br>
+    using namespace std; <br>
+    int main()<br>
+    {<br>
+        string name="srinu";<br>
+        int age=21;<br>
+        cout<<"name="<< name << endl; <br>
+        cout<<"age="<< age; <br>
+        return 0;<br>
+    }<br>
+    <u><h3>output</h3></u>
+    name=srinu<br>
+    age=21<br>
+</div>
+</code>
+<br>
+<h2>cin</h2>
+<p>Another important predefine object provided by the istream class is <mark>cin.</mark>
+    Mostly we use cin object to give input data to our program.
+   Cin always refer standard input device i.e keybord,it always take the input from
+   keyboard.
+   Cin is available in istream predefine class and we use <mark>iostream.h</mark> headerfile 
+       to perform cin operation, how we use headerfile for cout.
+       </p>
+       <span class="spa2">
+           syntax for cin:
+       </span>
+       <div class="syntax_cin">
+           cin>>variable>>variable>>...;
+       </div>
+       <p>In the above syntax we use ">>" we call it as extraction operator
+           and we also called it as over loaded rigth shift operator.<br><br>
+   cin doesn't required address operator. Because implicit conversion is done.<br> 
+           <u>Example:</u><br>
+           int a;<br>
+           int b;<br>
+           cin>> a;<br>
+           cin>> b;<br>
+ we can give two inputs by using single cin object, Like<br>
+ cin>>a>>b;<br>
+ here we use extraction operator in two times its refers to cascading. <br>
+ 
+       </p>
+       <h3>program 1</h3>
+       <div class="exam2">
+       <code>
+        #include< iostream > <br>
+        using namespace std;<br>
+        int main()<br>
+        {<br>
+            int a;<br>
+            int b;<br>
+            cout<<"enter a and b values"<< endl;<br>
+            cin>>a;<br>
+            cin>>b;<br>
+            cout<<"a="<< a<< endl;<br>
+                cout<< "b="<< b<< endl;<br>
+                return 0;<br>
+
+        }<br><br>
+        <u><h3>output</h3></u><br>
+        enter a and b values<br>
+        24<br>
+        100<br>
+        a=24<br>
+        b=100<br>
+    </code>
+    </div>
+    <h3>program 2</h3>
+    <div class="exam2">
+        <code>
+            #include< iostream > <br>
+            using namespace std;<br>
+            int main()<br>
+            {<br>
+                int a;<br>
+                int b;<br>
+                cout<<"enter a and b values"<< endl;<br>
+               <mark> cin>>a>>b;<br></mark>
+                
+                cout<<"a="<< a<< endl;<br>
+                    cout<< "b="<< b<< endl;<br>
+                    return 0;<br>
+    
+            }<br><br>
+            <u><h3>output</h3></u><br>
+            enter a and b values<br>
+            24<br>
+            100<br>
+            a=24<br>
+            b=100<br>  
+        </code>
+    </div>
+<div class="option"> 
+    <div class="previous">
+    <a href="streams.html"><button>previous</button></a>
+    </div>
+    <div class="next">
+        <a href="manipulators_in_c++.html"><button>Next</button></a>
+    </div>
+</div>
+   <br>
+   <div class="copyrigth">
+       @copyright
+   </div>    
+
+</body>
+</html>
